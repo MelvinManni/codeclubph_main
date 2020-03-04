@@ -1,6 +1,134 @@
+$font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$primary: #4285f4;
+$primary-dark: #1d63d3;
+$secondary: #FFCA28;
+$secondary-dark: rgb(248, 163, 4);
+$primary-shadow: 0 0 25px rgba(66, 133, 244, 0.32);
+$main-text: #5f5f5f;
+
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: $font;
 }
 
+button.main{
+    cursor: pointer;
+    transition: all 0.18s ease-in;
+    border: 2px solid $primary;
+
+
+    &:hover, &:focus{
+        transform: translateY(-10%);
+        box-shadow: $primary-shadow;
+        background: $primary;
+        color: #fff;
+    }
+    &:active{
+        transform: translateY(-10%) scale(0.9);
+    }
+
+}
+.primary-btn{
+    background: $primary !important; 
+    color: #fff !important;
+}
+.primary-btn-alt{
+    background: transparent; 
+    color: $primary;
+}
+
+#main{
+    position: relative;
+}
+
+.section{
+    width: 100%;
+    position: relative;
+}
+
+.section.landing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+.section-content-container.details{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
+
+    .logo-container{
+        position: absolute;
+        top: 2em;
+        left: calc((100% - 85%)/2);
+        display: flex;
+        align-items: center ;
+
+        .logo{
+            display: inline-flex;
+
+            svg{
+                width: 30px;
+                height: 30px;
+                margin: 0 0.75em 0 0;
+    
+                path:nth-of-type(1){
+                    fill: $secondary;
+                }
+                path:nth-of-type(2){
+                    fill: $secondary-dark;
+                }
+                path:nth-of-type(3){
+                    fill: $primary
+                }
+                path:nth-of-type(4){
+                    fill: $primary-dark;
+                }
+            }
+    
+        }
+
+    }
+
+    &:nth-of-type(1){
+        grid-column: 1;  
+    }
+    &::nth-of-type(2){
+        grid-column: 2;
+    }
+
+    .intro-text-container{
+        width: 85%;
+        margin: 0 auto;
+        
+        h1, p{  
+            margin: 0 0 1em  0;
+        }
+
+        h1{
+            color: $main-text;
+            font-weight: 700;
+        }
+
+        .actions-container{
+            margin: 0 0;
+
+            button{
+                padding: 0.85em 2.15em;
+                border-radius: 0.35em;
+                margin: 0 0.85em 0 0;
+
+                &:nth-last-of-type(1){
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+.section-content-container.display{
+    background-image: url(../../assets/img/landing.JPG);
+}

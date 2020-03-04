@@ -3,5 +3,147 @@
           box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+button.main {
+  cursor: pointer;
+  -webkit-transition: all 0.18s ease-in;
+  transition: all 0.18s ease-in;
+  border: 2px solid #4285f4;
+}
+
+button.main:hover, button.main:focus {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  -webkit-box-shadow: 0 0 25px rgba(66, 133, 244, 0.32);
+          box-shadow: 0 0 25px rgba(66, 133, 244, 0.32);
+  background: #4285f4;
+  color: #fff;
+}
+
+button.main:active {
+  -webkit-transform: translateY(-10%) scale(0.9);
+          transform: translateY(-10%) scale(0.9);
+}
+
+.primary-btn {
+  background: #4285f4 !important;
+  color: #fff !important;
+}
+
+.primary-btn-alt {
+  background: transparent;
+  color: #4285f4;
+}
+
+#main {
+  position: relative;
+}
+
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.section.landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.section-content-container.details {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.section-content-container.details .logo-container {
+  position: absolute;
+  top: 2em;
+  left: calc((100% - 85%)/2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-content-container.details .logo-container .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.section-content-container.details .logo-container .logo svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.75em 0 0;
+}
+
+.section-content-container.details .logo-container .logo svg path:nth-of-type(1) {
+  fill: #FFCA28;
+}
+
+.section-content-container.details .logo-container .logo svg path:nth-of-type(2) {
+  fill: #f8a304;
+}
+
+.section-content-container.details .logo-container .logo svg path:nth-of-type(3) {
+  fill: #4285f4;
+}
+
+.section-content-container.details .logo-container .logo svg path:nth-of-type(4) {
+  fill: #1d63d3;
+}
+
+.section-content-container.details:nth-of-type(1) {
+  -ms-grid-column: 1;
+  grid-column: 1;
+}
+
+.section-content-container.details::nth-of-type(2) {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.section-content-container.details .intro-text-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.section-content-container.details .intro-text-container h1, .section-content-container.details .intro-text-container p {
+  margin: 0 0 1em  0;
+}
+
+.section-content-container.details .intro-text-container h1 {
+  color: #5f5f5f;
+  font-weight: 700;
+}
+
+.section-content-container.details .intro-text-container .actions-container {
+  margin: 0 0;
+}
+
+.section-content-container.details .intro-text-container .actions-container button {
+  padding: 0.85em 2.15em;
+  border-radius: 0.35em;
+  margin: 0 0.85em 0 0;
+}
+
+.section-content-container.details .intro-text-container .actions-container button:nth-last-of-type(1) {
+  margin: 0;
+}
+
+.section-content-container.display {
+  background-image: url(../../assets/img/landing.JPG);
 }
 /*# sourceMappingURL=styles.css.map */
