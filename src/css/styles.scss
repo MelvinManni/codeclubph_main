@@ -50,21 +50,23 @@ button.main{
 }
 
 .section.landing{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     height: 100vh;
 }
+
 .section-content-container.details{
     position: relative;
     display: flex;
     align-items: center;
     justify-items: center;
-
+    height: 78%;
 
     .logo-container{
-        position: absolute;
-        top: 2em;
-        left: calc((100% - 85%)/2);
+        position: absolute;                             
+        top: 0;
+        width: 100%;
+        border-bottom: 2px solid #e1e1e1;
+        padding: 1em 7.5%;
+        left: 0;
         display: flex;
         align-items: center ;
 
@@ -92,13 +94,6 @@ button.main{
     
         }
 
-    }
-
-    &:nth-of-type(1){
-        grid-column: 1;  
-    }
-    &::nth-of-type(2){
-        grid-column: 2;
     }
 
     .intro-text-container{
@@ -130,5 +125,73 @@ button.main{
     }
 }
 .section-content-container.display{
-    background-image: url(../../assets/img/landing.JPG);
+    height: 22%;
+    background: $primary;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .display-content-container{
+        text-align: center;
+
+        .svg-container{
+            margin: 1em auto;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            svg{
+                height: 40px;
+                width: 40px;
+                
+                path{
+                    fill: none;
+                    stroke: $primary;
+                    stroke-width: 3px;
+                }
+            }
+
+        }
+
+        p{
+
+        }
+
+    }
+}
+
+
+//for larger screens
+@media screen and (min-width: 600px){
+    .section.landing{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .section-content-container.details{
+        height: 100%;
+        .logo-container{
+            border: none;
+            padding-top: 2em;
+        }
+        &:nth-of-type(1){
+            grid-column: 1;  
+        }
+        &::nth-of-type(2){
+            grid-column: 2;
+        }
+    
+    }
+    .section-content-container.display{
+        height: 100%;
+        background-image: url(../../assets/img/landing.JPG);
+
+        & div{
+            display: none;
+        }
+    }
 }
