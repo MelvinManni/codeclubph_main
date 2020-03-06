@@ -47,7 +47,75 @@ button.main:active {
 }
 
 .section.landing {
-  height: 100vh;
+  height: 70vh;
+}
+
+.logo-container {
+  position: relative;
+  top: 0;
+  width: 100%;
+  border-bottom: 2px solid #e1e1e1;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container .main-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1em auto;
+}
+
+.logo-container .main-logo .logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.logo-container .main-logo .logo svg {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.75em 0 0;
+}
+
+.logo-container .main-logo .logo svg path:nth-of-type(1) {
+  fill: #FFCA28;
+}
+
+.logo-container .main-logo .logo svg path:nth-of-type(2) {
+  fill: #f8a304;
+}
+
+.logo-container .main-logo .logo svg path:nth-of-type(3) {
+  fill: #4285f4;
+}
+
+.logo-container .main-logo .logo svg path:nth-of-type(4) {
+  fill: #1d63d3;
+}
+
+@media screen and (min-width: 600px) {
+  .logo-container {
+    position: absolute;
+    border: none;
+  }
+  .logo-container .main-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2em calc(7.5% / 2);
+  }
 }
 
 .section-content-container.details {
@@ -59,50 +127,7 @@ button.main:active {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  height: 78%;
-}
-
-.section-content-container.details .logo-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  border-bottom: 2px solid #e1e1e1;
-  padding: 1em 7.5%;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section-content-container.details .logo-container .logo {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.section-content-container.details .logo-container .logo svg {
-  width: 30px;
-  height: 30px;
-  margin: 0 0.75em 0 0;
-}
-
-.section-content-container.details .logo-container .logo svg path:nth-of-type(1) {
-  fill: #FFCA28;
-}
-
-.section-content-container.details .logo-container .logo svg path:nth-of-type(2) {
-  fill: #f8a304;
-}
-
-.section-content-container.details .logo-container .logo svg path:nth-of-type(3) {
-  fill: #4285f4;
-}
-
-.section-content-container.details .logo-container .logo svg path:nth-of-type(4) {
-  fill: #1d63d3;
+  min-height: 70vh;
 }
 
 .section-content-container.details .intro-text-container {
@@ -134,26 +159,19 @@ button.main:active {
 }
 
 .section-content-container.display {
-  height: 22%;
+  display: none;
+}
+
+.section.about {
   background: #4285f4;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.section-content-container.display .display-content-container {
   text-align: center;
+  min-height: 22%;
+  padding: 1em 0;
 }
 
-.section-content-container.display .display-content-container .svg-container {
-  margin: 1em auto;
+.section.about .svg-container {
+  margin: 0 auto;
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -169,12 +187,12 @@ button.main:active {
           align-items: center;
 }
 
-.section-content-container.display .display-content-container .svg-container svg {
+.section.about .svg-container svg {
   height: 40px;
   width: 40px;
 }
 
-.section-content-container.display .display-content-container .svg-container svg path {
+.section.about .svg-container svg path {
   fill: none;
   stroke: #4285f4;
   stroke-width: 3px;
@@ -186,6 +204,7 @@ button.main:active {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    height: 100vh;
   }
   .section-content-container.details {
     height: 100%;
@@ -203,8 +222,11 @@ button.main:active {
     grid-column: 2;
   }
   .section-content-container.display {
+    display: block;
     height: 100%;
     background-image: url(../../assets/img/landing.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .section-content-container.display div {
     display: none;

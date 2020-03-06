@@ -49,30 +49,28 @@ button.main{
     position: relative;
 }
 
+$minHght: 70vh;
 .section.landing{
-    height: 100vh;
+    height: $minHght;
 }
 
-.section-content-container.details{
-    position: relative;
+.logo-container{
+    position: relative;                             
+    top: 0;
+    width: 100%;
+    border-bottom: 2px solid #e1e1e1;
+    left: 0;
     display: flex;
     align-items: center;
-    justify-items: center;
-    height: 78%;
 
-    .logo-container{
-        position: absolute;                             
-        top: 0;
-        width: 100%;
-        border-bottom: 2px solid #e1e1e1;
-        padding: 1em 7.5%;
-        left: 0;
+    .main-logo{
         display: flex;
-        align-items: center ;
+        align-items: center;
+        margin: 1em auto;
 
         .logo{
             display: inline-flex;
-
+    
             svg{
                 width: 30px;
                 height: 30px;
@@ -93,8 +91,30 @@ button.main{
             }
     
         }
-
     }
+
+}
+
+@media screen and (min-width: 600px){
+    .logo-container{
+        position: absolute;
+        border: none;
+
+        .main-logo{
+            display: flex;
+            align-items: center;
+            margin: 2em calc(7.5% / 2);
+        }
+    }
+}
+
+.section-content-container.details{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    min-height: $minHght;
+
 
     .intro-text-container{
         width: 85%;
@@ -125,52 +145,51 @@ button.main{
     }
 }
 .section-content-container.display{
-    height: 22%;
+    display: none;
+}
+
+.section.about{
     background: $primary;
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    min-height: 22%;    
+    padding: 1em 0;
 
-    .display-content-container{
-        text-align: center;
+    .svg-container{
+        margin: 0 auto;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .svg-container{
-            margin: 1em auto;
-            height: 60px;
-            width: 60px;
-            border-radius: 50%;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-    
-            svg{
-                height: 40px;
-                width: 40px;
-                
-                path{
-                    fill: none;
-                    stroke: $primary;
-                    stroke-width: 3px;
-                }
+        svg{
+            height: 40px;
+            width: 40px;
+            
+            path{
+                fill: none;
+                stroke: $primary;
+                stroke-width: 3px;
             }
-
-        }
-
-        p{
-
         }
 
     }
-}
 
+    p{
+
+    }
+
+}
 
 //for larger screens
 @media screen and (min-width: 600px){
     .section.landing{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        height: 100vh;
     }
     .section-content-container.details{
         height: 100%;
@@ -187,8 +206,11 @@ button.main{
     
     }
     .section-content-container.display{
+        display: block;
         height: 100%;
         background-image: url(../../assets/img/landing.JPG);
+        background-repeat: no-repeat;
+        background-size: cover;
 
         & div{
             display: none;
