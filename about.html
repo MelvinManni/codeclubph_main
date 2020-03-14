@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/icon/css/all.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CODECLUB UNIPORT</title>
+</head>
+<body>
+    <div class="container about-container">
+        <nav>
+            <div class="about-nav">
+                <div class="about-logo">
+                    <a href="index.html">
+                        <div class="logo">
+                            <div class="flex">
+                                <p class="first-brace">{</p>
+                                <p class="second-brace">}</p>
+                                <p class="logo-text">
+                                    CODE CLUB
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="nav-group">
+                    <ul class="nav-lists flex">
+                        <li class="nav-list"><a href="#about" class="nav-link">About Us</a></li>
+                        <li class="nav-list"><a href="#team" class="nav-link">Meet The Team</a></li>
+                        <li class="nav-list"><a href="#gallery" class="nav-link">Gallery</a></li>
+                        <li class="nav-list"><a href="#contact" class="contact-link btn">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="flex about-main">
+            <div class="col">
+                <div class="about-img">
+                    <img src="assets/images/about.png" alt="woman-holding-blue-box-while-sitting-on-white-couch">
+                </div>
+            </div>
+
+            <div class="col ">
+                <div class="about-text " id="about">
+                    <div class="title">
+                        <p>About Us</p>
+                    </div>
+
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="meet-people" id="team">
+            <p class="title">
+                Meet The People
+            </p>
+
+            <div class="people-card" id="card-slot">
+                <!--The Cards are set up in about-card.js and inserted here-->
+            </div>
+        </div>
+
+
+        <div class="gallery" id="gallery">
+            <p class="title">
+                Gallery
+            </p>
+
+            <div class="gallery-flex">
+                <div class="col sec-1">
+                    <img src="assets/images/gallery/1.png" alt="">
+                </div>
+
+                <div class="col sec-2">
+                    <img src="assets/images/gallery/2.png" alt="">
+                    <img src="assets/images/gallery/3.png" alt="">
+                    <img src="assets/images/gallery/4.png" alt="">
+                </div>
+
+                <div class="col sec-3">
+                    <img src="assets/images/gallery/5.png" alt="">
+                    <img src="assets/images/gallery/6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="contact slideContact" id="contact">
+            <p class="title">
+                Leave Us A Message
+            </p>
+
+            <p class="message">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <div class="contact-main">
+                <form action="">
+
+                    <div class="input-group">
+                        <div class="name-group grouped">
+                            <label for="name" class="input-label" id="name-label">Your Name</label>
+                            <input type="text" name="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="mail-group grouped">
+                            <label for="email" class="input-label" id="mail-label">EMAIL ADDRESS</label>
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="textarea-group grouped">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="" cols="30" rows="6"></textarea>
+                        </div>
+
+                        <div class="right-wrapper contact-btn">
+                            <div class="push-button">
+                                <button type="submit" class="text-btn">
+                                    Submit form
+                                    <div class="form-arrow">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                  
+                   
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="foot-flex">
+            <div class="logo">
+                <div class="flex">
+                    <div class="foot-brace">
+                        <p class="first-brace">{</p>
+                        <p class="second-brace">}</p>
+                    </div>
+                    <p class=" foot-logo logo-text">
+                        CODE CLUB
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Javascript-->
+
+    <script src="src/about-card.js"></script>
+</body>
+</html>
