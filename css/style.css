@@ -4,10 +4,12 @@ body{
     color: #5F6B80;
 }
 
-a{
+a, a:focus, a:hover{
     text-decoration: none;
     border: none;
     cursor: pointer;
+    color: #fff;
+    outline: none;
 }
 
 .content{
@@ -108,6 +110,7 @@ button{
 
 .btn:hover{
     font-size: 17px;
+    color: #fff;
 }
 
 .btn-outline{
