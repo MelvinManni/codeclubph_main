@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
@@ -38,7 +39,7 @@
                         aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
                     </p>
 
-                    <div class="flex welcome-btn">
+                    <div class=" welcome-btn">
                         <a href="404.html"><button class="btn welcome-btn-1">
                                 Join Now
                             </button></a>
@@ -58,7 +59,7 @@
         </div>
 
 
-        <div class="blue-div">
+        <div class="blue-div p-5">
             <div class="blue-img">
                 <img src="assets/images/icon/world.svg" alt="">
             </div>
@@ -79,7 +80,7 @@
                     Learn More
                 </button>
             </div>
-        </div>
+        </div> 
 
         <div class="tech-sect">
             <div class="flex tech-flex">
@@ -161,7 +162,7 @@
                 Featured Communities
             </p>
 
-            <div class="com-flex">
+            <div class="com-flex noCarousel">
                 <div class="card">
                     <div class="left-card">
                         <img width="50px" src="assets/images/icon/dsclogo.png" alt="" class="card-logo">
@@ -204,6 +205,81 @@
                     </div>
                 </div>
             </div>
+
+
+            <!---Mobile Carousel-->
+            
+            <div id="carouselExampleIndicators2" class="carouselMob carousel slide mr-auto ml-auto" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-card">
+                            <div class="center-card">
+                                <img width="50px" src="assets/images/icon/dsclogo.png" alt="" class="card-logo">
+                                <p class="card-title">Google Developer Student Club</p>
+                                <p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna
+                                    aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="center-card">
+                                <img width="40px" src="assets/images/icon/microsoft.svg" alt="" class="card-logo">
+                                <p class="card-title">Microsoft Student Partners</p>
+                                <p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna
+                                    aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="center-card">
+                                <img width="40px" src="assets/images/icon/github.svg" alt="" class="card-logo">
+                                <p class="card-title">GitHub Campus Experts</p>
+                                <p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna
+                                    aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="center-card">
+                                <img width="45px" src="assets/images/icon/https___cdn.evbuc.com_images_53574733_126074832101_2_original.png" alt=""
+                                    class="card-logo">
+                                <p class="card-title">Ingressive</p>
+                                <p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna
+                                    aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button"
+                    data-slide="prev">
+                    <div class="indicator">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </div>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <div class="indicator">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </div>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Carousel -->
         </div>
 
 
@@ -214,7 +290,7 @@
             </p>
 
 
-            <div class="test-flex">
+            <div class="test-flex noCarousel">
                 <div class="card">
                     <div class="center-card">
                     <img width="20%" src="assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" class="card-logo" alt="">
@@ -242,6 +318,63 @@
                     </div>
                 </div>
             </div>
+
+
+            <!---Mobile Carousel-->
+
+            <div id="carouselExampleIndicators" class="carousel carouselMob slide " data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-card">
+                            <div class="center-card">
+                                <img width="20%" class="card-logo" src="assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="">
+                                <p class="card-title">John Doe</p>
+                                <p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="center-card">
+                                <img width="20%" class="card-logo" src="assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="">
+                                <p class="card-title">John loe</p>
+                                <p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-card">
+                            <div class="center-card">
+                                <img width="20%" class="card-logo" src="assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="">
+                                <p class="card-title">John ioe</p>
+                                <p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <div class="indicator">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </div>
+                    <span class="sr-only" >Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <div class="indicator">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </div>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <!-- Mobile Carousel -->
         </div>
 
 
@@ -272,6 +405,15 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+    <!--Javascript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   
 </body>
 
 </html>

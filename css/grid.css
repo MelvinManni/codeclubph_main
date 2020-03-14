@@ -107,6 +107,13 @@ width: 99.7%;
     padding: 10px;
 }
 
+.carousel-card{
+    min-height: 200px;
+    max-height: max-content;
+    border: 1px solid #E1E1E1 ;
+    padding: 20px;
+}
+
 .center-card{
     display: flex;
     flex-direction: column;

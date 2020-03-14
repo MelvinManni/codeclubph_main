@@ -18,6 +18,10 @@ a{
     outline: none;
 }
 
+.carousel-item:hover{
+    animation: 3s float infinite;
+}
+
 .card:hover{
     animation: 3s float infinite;
 }
@@ -35,7 +39,7 @@ a{
     animation: 4s slideright 1;
 }
 
-.round-image
+.round-image{
     transition: 3s ease;
 }
 
@@ -57,8 +61,14 @@ a{
 button:hover{
     animation: 2s rubberBand 1;
 }
+
+.carouselMob{
+    display: none;
+}
+
 /* ===BUTTON=== */
 /* text-button */
+
 
 .text-btn{
     font-family: 'poppins';
@@ -203,6 +213,9 @@ button{
 
 .welcome-btn{
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .welcome-btn-1 {
@@ -316,7 +329,11 @@ button{
 .com-flex{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+}
+
+.com-flex .card{
+    margin: 10px;
 }
 
 .communities .title{
@@ -441,7 +458,6 @@ button{
 .page-404 .button{
     margin: 2em auto;
 }
-
 
 
 /* === ABOUT === */
@@ -782,11 +798,37 @@ footer{
     margin: 0;
 }
 
+.indicator{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #39455A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carousel-indicators{
+    background-color: #5F6B80;
+    bottom: -30px;
+    border-radius: 0 0 4px 4px;
+}
+
 
 /* ==== GENERAL MEDIA ==== */
 
 @media all and (max-width:924px){
     /* ==== INDEX ==== */
+
+    
+    .carouselMob{
+        display: block;
+    }
+
+    .noCarousel{
+        display: none;
+    }
     
     .btn-margin{
         margin-top: 20px;
@@ -882,6 +924,11 @@ footer{
     .contact .input-group{
         padding: 40px 20px;
     }
+
+    
+    .blue-div .button{
+        margin-bottom: 30px;
+    }
 /* 
     .contact .message{
         width: 100%;
@@ -909,7 +956,12 @@ footer{
     .welcome-btn-1{
         margin-bottom: 10px;
     }
+
+    .welcome-btn{
+        flex-wrap: wrap;
+    }
 }
+
 
 
 
