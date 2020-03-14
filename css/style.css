@@ -35,7 +35,7 @@ a{
     animation: 4s slideright 1;
 }
 
-.round-image{
+.round-image
     transition: 3s ease;
 }
 
@@ -47,6 +47,11 @@ a{
     transition: 0.4s ease;
     animation: 2s flipIn 1;
     
+}
+
+.gallery-flex .col img:hover{
+     animation: popup 4s;
+     transition: 0.8s ease;
 }
 
 button:hover{
@@ -1041,5 +1046,21 @@ footer{
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes popup {
+  from{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  60%{
+    transform: scale(1.15);
+  }
+  
+  to{
+      transform: scale(1.2);
   }
 }
