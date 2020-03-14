@@ -304,9 +304,8 @@ button{
     font-size: 15px;
 }
 
-.communities{
+.communities, .testmonial{
     padding: 0 20px;
-
 }
 
 .com-flex{
@@ -783,6 +782,12 @@ footer{
 
 @media all and (max-width:924px){
     /* ==== INDEX ==== */
+    
+    .btn-margin{
+        margin-top: 20px;
+    }
+
+
     .media-100{
         width: 100%;
     }
@@ -850,10 +855,32 @@ footer{
         text-align: justify;
     }
 
-    .btn-margin{
-        margin-top: 10px;
+}
+
+@media all and (max-width:666px){
+    #media66{
+        width: 100%;
     }
 
+    .contact-btn{
+        width: 100%;
+    }
+
+    .tech{
+        padding: 0 15px;
+    }
+
+    .tech-list{
+        padding-left: 0;
+    }
+
+    .contact .input-group{
+        padding: 40px 20px;
+    }
+/* 
+    .contact .message{
+        width: 100%;
+    } */
 }
 
 
@@ -866,6 +893,17 @@ footer{
         padding: 0 15px;
     }
 
+    
+    .communities, .testmonial{
+        padding: 0 15px;
+    }
+
+}
+
+@media all and (max-width: 430px){
+    .welcome-btn-1{
+        margin-bottom: 10px;
+    }
 }
 
 
