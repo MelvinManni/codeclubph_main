@@ -81,7 +81,7 @@ button.main{
     display: flex;
     align-items: center;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     background: rgba($color: #fff, $alpha: 0.96);
     z-index: 999;
     color: $main-text;
@@ -89,7 +89,7 @@ button.main{
     .main-logo{
         display: flex;
         align-items: center;
-        margin: 1em auto;
+        margin: 1.55em auto;
 
         .logo{
             display: inline-flex;
