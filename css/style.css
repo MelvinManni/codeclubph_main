@@ -32,6 +32,10 @@ a, a:focus, a:hover{
     animation: 3s float infinite;
 }
 
+.fadeInUpAnimation{
+    animation: 3s fadeInUp 1 ;
+}
+
 .slideleft{
     animation: 2s slideleft 1;
 }
@@ -768,6 +772,8 @@ input:focus, textarea:focus{
 .input-group{
     padding: 50px 30px;
     border: 1px solid rgba(122, 122, 122, 0.212);
+    width: 95%;
+    margin: auto;
 }
 
 
@@ -1084,6 +1090,26 @@ footer{
 .fadeInRight {
   -webkit-animation-name: slideright;
   animation-name: slideright;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: slideright;
+  animation-name: fadeInUp;
 }
 
 
