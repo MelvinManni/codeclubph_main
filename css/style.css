@@ -4,6 +4,10 @@ body{
     color: #5F6B80;
 }
 
+#nav{
+    width: 100vw;
+}
+
 a, a:focus, a:hover{
     text-decoration: none;
     border: none;
@@ -28,6 +32,10 @@ a, a:focus, a:hover{
     animation: 3s float infinite;
 }
 
+.fadeInUpAnimation{
+    animation: 3s fadeInUp 1 ;
+}
+
 .slideleft{
     animation: 2s slideleft 1;
 }
@@ -49,24 +57,47 @@ a, a:focus, a:hover{
     animation: 4s spinningWheel 1 ;
 }
 
-.about-nav{
+nav{
     transition: 0.4s ease;
     animation: 2s flipIn 1;
     
 }
 
 .gallery-flex .col img:hover{
-     animation: popup 4s;
+     animation: popup 3s;
+     animation-fill-mode: forwards; 
      transition: 0.8s ease;
 }
 
-button:hover{
+.btn-outline-reverse:hover, .btn:hover, .btn-outline:hover{
     animation: 2s rubberBand 1;
 }
 
 .carouselMob{
     display: none;
 }
+
+
+
+
+/* ====! Indicator for Carousel=== */
+
+.carousel-indicators{
+    bottom: -50px;
+}
+
+.carousel ol li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #4285F4;
+}
+
+.carousel ol li:active{
+    width: 15px;
+    height: 15px;
+}
+
 
 /* ===BUTTON=== */
 /* text-button */
@@ -100,7 +131,7 @@ button{
     padding: 5px;
     border-radius: 2px;
     height: 45px;
-    min-width: 180px;
+    min-width: 130px;
     max-width: max-content;
     font-size: 15px;
     color: #fff;
@@ -122,7 +153,7 @@ button{
     padding: 5px;
     border-radius: 2px;
     height: 45px;
-    min-width: 180px;
+    min-width: 130px;
     max-width: max-content;
     font-size: 15px;
     color: #4285F4;
@@ -141,7 +172,7 @@ button{
     padding: 5px;
     border-radius: 2px;
     height: 45px;
-    min-width: 180px;
+    min-width: 130px;
     max-width: max-content;
     font-size: 15px;
     color: #fff;
@@ -258,6 +289,7 @@ button{
 
 .blue-div .button{
     margin-top: 35px;
+    margin-bottom: 90px;
 }
 
 
@@ -331,12 +363,11 @@ button{
 
 .com-flex{
     display: flex;
-    flex-wrap: wrap;
     justify-content: flex-start;
 }
 
 .com-flex .card{
-    margin: 10px;
+    margin-left: 10px;
 }
 
 .communities .title{
@@ -456,6 +487,7 @@ button{
     font-weight: 400;
     font-size: 15px;
     margin-top: 3em;
+    line-height: 48px;
 }
 
 .page-404 .button{
@@ -470,15 +502,17 @@ button{
 }
 
 
-.about-nav{
-    display: flex;
-    flex-direction: row;
+.navbar{
     align-items: center;
-    height: 80px;
     border-width: 0 0 2px 0;
     border-style: solid;
     border-color: #00000017;
-    justify-content: space-between;
+}
+
+.navbar .navbar-collapse .navbar-nav{
+    margin-left: auto;
+    justify-content: left;
+    align-items: center;
 }
 
 .nav-lists{
@@ -490,12 +524,12 @@ button{
     font-family: 'heebo';
     font-size: 15px;
     font-weight: 400;
-    margin-right: 40px;
     color: #5F6B80;
     transition: 0.4s ease;
+    margin: auto ;
 }
 
-.nav-link:hover{
+.navbar .navbar-collapse .navbar-nav .nav-link:hover{
     color: #4285F4;
 }
 
@@ -582,14 +616,42 @@ button{
     
 }
 
+.about-logo{
+    position: relative;
+    top: 8px;
+}
 
 
-@media all and (max-width: 1023px){
 
+@media all and (max-width: 1024px){
+
+    .navbar .navbar-collapse .navbar-nav{
+        align-items: flex-start;
+    }
     
     #card-slot{
         overflow-x: scroll;
         scroll-behavior: smooth;
+    }
+
+    #card-slot::-webkit-scrollbar{
+        background-color: transparent;
+        width: 6px;
+        height: 6px;
+        transition: 1s ease;
+    }
+
+    #card-slot::-webkit-scrollbar-button{
+        background-color: #66686A;
+        width: 6px;
+        transition: 1s ease;
+    }
+
+    #card-slot::-webkit-scrollbar-thumb{
+        background-color: #485161;
+        border-radius: 9px;
+        width: 10px;
+        transition: 1s ease;
     }
 
 
@@ -711,6 +773,8 @@ input:focus, textarea:focus{
 .input-group{
     padding: 50px 30px;
     border: 1px solid rgba(122, 122, 122, 0.212);
+    width: 90%;
+    margin: auto;
 }
 
 
@@ -792,10 +856,14 @@ footer{
     margin-right: 5px;
 }
 
-.foot-flex .logo .flex{
-    align-items: center;
-    justify-content: center;
+.brace{
+    margin: auto 0;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: row;
 }
+
+
 
 .foot-brace .second-brace{
     margin: 0;
@@ -812,11 +880,6 @@ footer{
     
 }
 
-.carousel-indicators{
-    background-color: #5F6B80;
-    bottom: -30px;
-    border-radius: 0 0 4px 4px;
-}
 
 
 /* ==== GENERAL MEDIA ==== */
@@ -824,6 +887,11 @@ footer{
 @media all and (max-width:1024px){
     /* ==== INDEX ==== */
 
+
+
+    .welcome{
+        padding:0 20px;
+    }
     
     .carouselMob{
         display: block;
@@ -846,6 +914,7 @@ footer{
     }
 
     .welcome{
+        padding-top: 40px;
         margin-bottom: 100px;
     }
 
@@ -894,7 +963,7 @@ footer{
     }
 
     .about-text{
-        padding-left: 0px;
+        padding: 0 20px;
     }
 
     .flex .col{
@@ -903,6 +972,14 @@ footer{
 
     .about-text .content{
         text-align: justify;
+    }
+
+    .contact{
+        padding: 0 15px;
+    }
+
+    .input-group{
+        width: 100%;
     }
 
 }
@@ -965,6 +1042,11 @@ footer{
     }
 }
 
+@media all and (max-width: 344px){
+    .btn, .btn-outline, .btn-outline-reverse{
+        min-width: 50px;
+    }
+}
 
 
 
@@ -1020,6 +1102,26 @@ footer{
 .fadeInRight {
   -webkit-animation-name: slideright;
   animation-name: slideright;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: slideright;
+  animation-name: fadeInUp;
 }
 
 
@@ -1108,13 +1210,6 @@ footer{
   from{
     transform: scale(1);
   }
-  50%{
-    transform: scale(1.1);
-  }
-  60%{
-    transform: scale(1.15);
-  }
-  
   to{
       transform: scale(1.2);
   }

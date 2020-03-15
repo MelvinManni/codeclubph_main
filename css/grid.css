@@ -108,6 +108,8 @@ width: 99.7%;
 }
 
 .carousel-card{
+    margin: 0 auto;
+    width: 90%;
     min-height: 200px;
     max-height: max-content;
     border: 1px solid #E1E1E1 ;
