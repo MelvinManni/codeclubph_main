@@ -4,8 +4,7 @@ $primary-dark: #1d63d3;
 $secondary: #FFCA28;
 $secondary-dark: rgb(248, 163, 4);
 $primary-shadow: 0 0 25px rgba(66, 133, 244, 0.32);
-$main-text: #5f5f5f;
-
+$main-text: #616d82;
 
 *{
     box-sizing: border-box;
@@ -39,6 +38,11 @@ button.main{
     background: transparent; 
     color: $primary;
 }
+.primary-btn-white-alt{
+    background: transparent; 
+    color: #fff;
+    border-color: #fff;
+}
 
 #main{
     position: relative;
@@ -47,21 +51,23 @@ button.main{
 .section{
     width: 100%;
     position: relative;
-}
+    .section-content-container{
+        height: 100%;
 
-$minHght: 70vh;
-.section.landing{
-    height: $minHght;
+    }
 }
 
 .logo-container{
-    position: relative;                             
+    position: fixed;                             
     top: 0;
     width: 100%;
     border-bottom: 2px solid #e1e1e1;
     left: 0;
     display: flex;
     align-items: center;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(2px);
+    z-index: 999;
 
     .main-logo{
         display: flex;
@@ -95,10 +101,20 @@ $minHght: 70vh;
 
 }
 
-@media screen and (min-width: 600px){
+$minHght: 450px;
+.section.landing{
+    min-height: $minHght;
+    height: 70vh;
+    margin: 70px 0 0 0;
+}
+
+
+@media screen and (min-width: 769px){
     .logo-container{
         position: absolute;
         border: none;
+        box-shadow: none;
+        backdrop-filter: none;
 
         .main-logo{
             display: flex;
@@ -113,8 +129,6 @@ $minHght: 70vh;
     display: flex;
     align-items: center;
     justify-items: center;
-    min-height: $minHght;
-
 
     .intro-text-container{
         width: 85%;
@@ -122,77 +136,43 @@ $minHght: 70vh;
         
         h1, p{  
             margin: 0 0 1em  0;
+            color: $main-text;
         }
 
         h1{
-            color: $main-text;
             font-weight: 700;
         }
 
-        .actions-container{
-            margin: 0 0;
+    }
+}
 
-            button{
-                padding: 0.85em 2.15em;
-                border-radius: 0.35em;
-                margin: 0 0.85em 0 0;
+.actions-container{
+    margin: 0 0;
 
-                &:nth-last-of-type(1){
-                    margin: 0;
-                }
-            }
+    button{
+        padding: 0.85em 2.15em;
+        border-radius: 0.35em;
+        margin: 0 0.85em 0 0;
+
+        &:nth-last-of-type(1){
+            margin: 0;
         }
     }
 }
+
 .section-content-container.display{
     display: none;
 }
 
-.section.about{
-    background: $primary;
-    color: #fff;
-    text-align: center;
-    min-height: 22%;    
-    padding: 1em 0;
-
-    .svg-container{
-        margin: 0 auto;
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        svg{
-            height: 40px;
-            width: 40px;
-            
-            path{
-                fill: none;
-                stroke: $primary;
-                stroke-width: 3px;
-            }
-        }
-
-    }
-
-    p{
-
-    }
-
-}
-
 //for larger screens
-@media screen and (min-width: 600px){
+@media screen and (min-width: 769px){
     .section.landing{
         display: grid;
         grid-template-columns: 1fr 1fr;
         height: 100vh;
+        margin: 0;
     }
     .section-content-container.details{
-        height: 100%;
         .logo-container{
             border: none;
             padding-top: 2em;
@@ -203,12 +183,10 @@ $minHght: 70vh;
         &::nth-of-type(2){
             grid-column: 2;
         }
-    
     }
     .section-content-container.display{
         display: block;
-        height: 100%;
-        background-image: url(../../assets/img/landing.JPG);
+        background-image: url(../../assets/img/two-woman-sitting-on-sofa-while-using-laptops-1181274.png);
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -217,3 +195,196 @@ $minHght: 70vh;
         }
     }
 }
+
+
+.section.about{
+    background: $primary;
+    color: #fff;
+    text-align: center;
+    min-height: 22%;    
+    position: relative;
+    z-index: 1;
+    
+    .wrapper1{
+        background: $primary;
+        padding: 1em;
+        top: 0;
+        position: relative;
+        transform: translateY(25%) skewY(5deg);
+        min-height: 280px;
+
+        .wrapper2{
+            transform: translateY(-25%) skewY(-5deg);
+
+        }
+        .svg-container{
+            margin: 1em auto;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg{
+                height: 40px;
+                width: 40px;
+                
+                path{
+                    fill: none;
+                    stroke: $primary;
+                    stroke-width: 3px;
+                }
+            }
+
+        }
+        h3{
+            font-weight: 100;
+            margin: 1em 0;
+        }
+        p{
+            width: 60%;
+            margin: auto;
+            font-weight: 100;
+        }   
+        .actions-container{
+            margin: 4em 0 0 0;
+            button{
+                border: 2px solid #fff;
+            }
+        }
+    }
+
+}
+
+.section.technologies{
+    margin: 20px 0 0 0;
+    .section-content-container.display{
+        display: block;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .section-content-container.details{
+        display: block;
+
+        .section-content-heading{
+            margin: 1em;
+            padding: 1em;
+            text-align: center;
+            color: $main-text;
+
+            h2{
+                margin: 1em 0;
+            }
+
+            p{
+                margin: 0 0 2em 0;
+
+                &:nth-last-of-type(1){
+                    margin: 0;
+                }
+            }
+        }
+        .section-items-cont{
+            margin: 1em;
+            padding: 1em;
+            color: $main-text;
+
+            .section-item{
+                text-align: center;
+                margin: 1em 0;
+                padding: 1em 0;
+    
+
+                .icon-cont{
+                    margin: 0 0 18px 0;
+
+                    img{
+
+                    }
+                }
+                .section-item-details{
+                    h3{
+                        margin: 18px 0;
+                    }
+                }
+            }
+        }
+        .indicators-cont{
+            display: inline-block;
+            position: relative;
+            margin: 1em;
+            padding: 1em;
+            float: right;
+            
+            .indicator{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border:  none;
+                outline: none;
+                margin:0 0.5em;
+                transition: all 0.12s ease;
+                cursor: pointer;
+                background: lighten($color: $primary, $amount: 15);
+
+                &.active{
+                    background: $primary;
+                }
+                &:hover{
+                    transform: translateY(-2.5px);
+                    background: $primary-dark;
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 769px){
+    .section.technologies{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .section-content-container.display{
+            background: none;
+            position: relative;
+            overflow: hidden;
+
+            img{
+                position: absolute;
+                height: 100%;
+                width: unset;
+            }
+            
+        }
+        .section-content-container.details{
+            padding: 20% 18px 18px 18px;
+
+            .section-content-heading{
+                text-align: left;
+            }
+            .section-items-cont{
+                .section-item{
+                    display: flex;
+                    text-align: left;
+
+                    .icon-cont{
+                        margin: 18px;
+                        img{
+    
+                        }
+                    }
+                    .section-item-details{
+                        
+                    }
+                }
+            }    
+        }
+    }
+}
+

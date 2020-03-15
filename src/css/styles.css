@@ -37,6 +37,12 @@ button.main:active {
   color: #4285f4;
 }
 
+.primary-btn-white-alt {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
 #main {
   position: relative;
 }
@@ -46,12 +52,12 @@ button.main:active {
   position: relative;
 }
 
-.section.landing {
-  height: 70vh;
+.section .section-content-container {
+  height: 100%;
 }
 
 .logo-container {
-  position: relative;
+  position: fixed;
   top: 0;
   width: 100%;
   border-bottom: 2px solid #e1e1e1;
@@ -62,6 +68,11 @@ button.main:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+          box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  z-index: 999;
 }
 
 .logo-container .main-logo {
@@ -102,10 +113,20 @@ button.main:active {
   fill: #1d63d3;
 }
 
-@media screen and (min-width: 600px) {
+.section.landing {
+  min-height: 450px;
+  height: 70vh;
+  margin: 70px 0 0 0;
+}
+
+@media screen and (min-width: 769px) {
   .logo-container {
     position: absolute;
     border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
   }
   .logo-container .main-logo {
     display: -webkit-box;
@@ -127,7 +148,6 @@ button.main:active {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  min-height: 70vh;
 }
 
 .section-content-container.details .intro-text-container {
@@ -137,24 +157,24 @@ button.main:active {
 
 .section-content-container.details .intro-text-container h1, .section-content-container.details .intro-text-container p {
   margin: 0 0 1em  0;
+  color: #616d82;
 }
 
 .section-content-container.details .intro-text-container h1 {
-  color: #5f5f5f;
   font-weight: 700;
 }
 
-.section-content-container.details .intro-text-container .actions-container {
+.actions-container {
   margin: 0 0;
 }
 
-.section-content-container.details .intro-text-container .actions-container button {
+.actions-container button {
   padding: 0.85em 2.15em;
   border-radius: 0.35em;
   margin: 0 0.85em 0 0;
 }
 
-.section-content-container.details .intro-text-container .actions-container button:nth-last-of-type(1) {
+.actions-container button:nth-last-of-type(1) {
   margin: 0;
 }
 
@@ -162,52 +182,14 @@ button.main:active {
   display: none;
 }
 
-.section.about {
-  background: #4285f4;
-  color: #fff;
-  text-align: center;
-  min-height: 22%;
-  padding: 1em 0;
-}
-
-.section.about .svg-container {
-  margin: 0 auto;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.section.about .svg-container svg {
-  height: 40px;
-  width: 40px;
-}
-
-.section.about .svg-container svg path {
-  fill: none;
-  stroke: #4285f4;
-  stroke-width: 3px;
-}
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 769px) {
   .section.landing {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     height: 100vh;
-  }
-  .section-content-container.details {
-    height: 100%;
+    margin: 0;
   }
   .section-content-container.details .logo-container {
     border: none;
@@ -223,13 +205,203 @@ button.main:active {
   }
   .section-content-container.display {
     display: block;
-    height: 100%;
-    background-image: url(../../assets/img/landing.JPG);
+    background-image: url(../../assets/img/two-woman-sitting-on-sofa-while-using-laptops-1181274.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
   .section-content-container.display div {
     display: none;
+  }
+}
+
+.section.about {
+  background: #4285f4;
+  color: #fff;
+  text-align: center;
+  min-height: 22%;
+  position: relative;
+  z-index: 1;
+}
+
+.section.about .wrapper1 {
+  background: #4285f4;
+  padding: 1em;
+  top: 0;
+  position: relative;
+  -webkit-transform: translateY(25%) skewY(5deg);
+          transform: translateY(25%) skewY(5deg);
+  min-height: 280px;
+}
+
+.section.about .wrapper1 .wrapper2 {
+  -webkit-transform: translateY(-25%) skewY(-5deg);
+          transform: translateY(-25%) skewY(-5deg);
+}
+
+.section.about .wrapper1 .svg-container {
+  margin: 1em auto;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section.about .wrapper1 .svg-container svg {
+  height: 40px;
+  width: 40px;
+}
+
+.section.about .wrapper1 .svg-container svg path {
+  fill: none;
+  stroke: #4285f4;
+  stroke-width: 3px;
+}
+
+.section.about .wrapper1 h3 {
+  font-weight: 100;
+  margin: 1em 0;
+}
+
+.section.about .wrapper1 p {
+  width: 60%;
+  margin: auto;
+  font-weight: 100;
+}
+
+.section.about .wrapper1 .actions-container {
+  margin: 4em 0 0 0;
+}
+
+.section.about .wrapper1 .actions-container button {
+  border: 2px solid #fff;
+}
+
+.section.technologies {
+  margin: 20px 0 0 0;
+}
+
+.section.technologies .section-content-container.display {
+  display: block;
+}
+
+.section.technologies .section-content-container.display img {
+  width: 100%;
+}
+
+.section.technologies .section-content-container.details {
+  display: block;
+}
+
+.section.technologies .section-content-container.details .section-content-heading {
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  color: #616d82;
+}
+
+.section.technologies .section-content-container.details .section-content-heading h2 {
+  margin: 1em 0;
+}
+
+.section.technologies .section-content-container.details .section-content-heading p {
+  margin: 0 0 2em 0;
+}
+
+.section.technologies .section-content-container.details .section-content-heading p:nth-last-of-type(1) {
+  margin: 0;
+}
+
+.section.technologies .section-content-container.details .section-items-cont {
+  margin: 1em;
+  padding: 1em;
+  color: #616d82;
+}
+
+.section.technologies .section-content-container.details .section-items-cont .section-item {
+  text-align: center;
+  margin: 1em 0;
+  padding: 1em 0;
+}
+
+.section.technologies .section-content-container.details .section-items-cont .section-item .icon-cont {
+  margin: 0 0 18px 0;
+}
+
+.section.technologies .section-content-container.details .section-items-cont .section-item .section-item-details h3 {
+  margin: 18px 0;
+}
+
+.section.technologies .section-content-container.details .indicators-cont {
+  display: inline-block;
+  position: relative;
+  margin: 1em;
+  padding: 1em;
+  float: right;
+}
+
+.section.technologies .section-content-container.details .indicators-cont .indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  margin: 0 0.5em;
+  -webkit-transition: all 0.12s ease;
+  transition: all 0.12s ease;
+  cursor: pointer;
+  background: #8ab4f8;
+}
+
+.section.technologies .section-content-container.details .indicators-cont .indicator.active {
+  background: #4285f4;
+}
+
+.section.technologies .section-content-container.details .indicators-cont .indicator:hover {
+  -webkit-transform: translateY(-2.5px);
+          transform: translateY(-2.5px);
+  background: #1d63d3;
+}
+
+@media screen and (min-width: 769px) {
+  .section.technologies {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .section.technologies .section-content-container.display {
+    background: none;
+    position: relative;
+    overflow: hidden;
+  }
+  .section.technologies .section-content-container.display img {
+    position: absolute;
+    height: 100%;
+    width: unset;
+  }
+  .section.technologies .section-content-container.details {
+    padding: 20% 18px 18px 18px;
+  }
+  .section.technologies .section-content-container.details .section-content-heading {
+    text-align: left;
+  }
+  .section.technologies .section-content-container.details .section-items-cont .section-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  .section.technologies .section-content-container.details .section-items-cont .section-item .icon-cont {
+    margin: 18px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
