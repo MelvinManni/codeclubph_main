@@ -487,6 +487,7 @@ button{
     font-weight: 400;
     font-size: 15px;
     margin-top: 3em;
+    line-height: 48px;
 }
 
 .page-404 .button{
@@ -886,6 +887,8 @@ footer{
 @media all and (max-width:1024px){
     /* ==== INDEX ==== */
 
+
+
     .welcome{
         padding:0 20px;
     }
@@ -969,6 +972,14 @@ footer{
 
     .about-text .content{
         text-align: justify;
+    }
+
+    .contact{
+        padding: 0 15px;
+    }
+
+    .input-group{
+        width: 100%;
     }
 
 }
