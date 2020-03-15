@@ -759,7 +759,6 @@ input{
 
 
 input::placeholder{
-    padding-left: 10px;
     font-size: 14px;
     font-family: 'heebo';
     font-weight: 400;
@@ -996,6 +995,11 @@ footer{
 @media all and (max-width:666px){
     #media66{
         width: 100%;
+    }
+
+
+    .join-flex{
+        flex-direction: column;
     }
 
     .contact-btn{
