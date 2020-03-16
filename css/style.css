@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+html body{
     color: #5F6B80;
 }
 
@@ -95,6 +95,37 @@ nav{
 .carousel ol li:active{
     width: 15px;
     height: 15px;
+}
+
+/* ====toper=== */
+
+.back-top{
+    position: fixed;
+    bottom: 200px;
+    right: 10px;
+}
+
+.back-top button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #4285F4;
+    border: none;
+    transition: 3s ease ;
+    display: none;
+}
+
+.back-top button i{
+    position: relative;
+    /* font-size: 35px; */
 }
 
 
