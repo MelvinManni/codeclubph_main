@@ -68,7 +68,7 @@ nav{
     
 }
 
-.btn-outline-reverse:hover, .btn:hover, .btn-outline:hover{
+.btn-outline-reverse:hover, .btn:hover, .btn-outline:hover, .back-top button:hover{
     animation: 0.7s breathe 1;
     animation-fill-mode: forwards;
 }
