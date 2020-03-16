@@ -37,11 +37,11 @@ a, a:focus, a:hover{
 }
 
 .slideleft{
-    animation: 2s slideleft 1;
+    animation: 4s slideleft 1;
 }
 
 .slideright{
-    animation: 2s slideright 1;
+    animation: 4s slideright 1;
     animation-delay: 0.2s;
 }
 
