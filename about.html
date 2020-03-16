@@ -11,39 +11,40 @@
     <title>CODECLUB UNIPORT</title>
 </head>
 <body>
-    <div class="bout-container">
-        <nav>
+    <div class="about-container">
         
-            <div class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        
-                <a class="navbar-brand" href="index.html">
-                    <div class="logo about-logo">
-                        <div class="flex">
-                            <p class="first-brace">{</p>
-                            <p class="second-brace">}</p>
-                            <p class="logo-text">
-                                CODE CLUB
-                            </p>
+            <nav>
+            
+                <div class="navbar fixed-top navbar-expand-lg navbar-light" id="navBar">
+            
+                    <a class="navbar-brand" href="index.html">
+                        <div class="logo about-logo">
+                            <div class="flex">
+                                <p class="first-brace">{</p>
+                                <p class="second-brace">}</p>
+                                <p class="logo-text">
+                                    CODE CLUB
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="#team">Meet The Team</a>
+                            <a class="nav-item nav-link" href="#about">About Us</a>
+                            <a class="nav-item nav-link" href="#gallery">Gallery</a>
+                            <a class="nav-item nav-link" href="#contact"><button class="btn">Contact Us</button></a>
+            
                         </div>
                     </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#about">About Us</a>
-                        <a class="nav-item nav-link" href="#team">Meet The Team</a>
-                        <a class="nav-item nav-link" href="#gallery">Gallery</a>
-                        <a class="nav-item nav-link" href="#contact"><button class="btn">Contact Us</button></a>
-        
-                    </div>
+            
                 </div>
-        
-            </div>
-        
-        </nav>
+            
+            </nav>
 
 
         <div class="flex about-main">
@@ -102,17 +103,17 @@
             </p>
 
             <div class="gallery-flex">
-                <div class="col sec-1">
+                <div class="Mycol sec-1">
                     <img src="assets/images/gallery/1.png" alt="">
                 </div>
 
-                <div class="col sec-2">
+                <div class="Mycol sec-2">
                     <img src="assets/images/gallery/2.png" alt="">
                     <img src="assets/images/gallery/3.png" alt="">
                     <img src="assets/images/gallery/4.png" alt="">
                 </div>
 
-                <div class="col sec-3">
+                <div class="Mycol sec-3">
                     <img src="assets/images/gallery/5.png" alt="">
                     <img src="assets/images/gallery/6.png" alt="">
                 </div>
@@ -187,6 +188,7 @@
     </footer>
 
     <!--Javascript-->
+    <script src="src/navBar.js"></script>
     <script src="src/about-card.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

@@ -8,8 +8,9 @@ body{
     color: #5F6B80;
 }
 
-#nav{
-    width: 100vw;
+.navbar{
+    background-color: rgb(255, 255, 255);
+    transition: 0.6s ease;
 }
 
 a, a:focus, a:hover{
@@ -67,14 +68,8 @@ nav{
     
 }
 
-.gallery-flex .col img:hover{
-     animation: popup 3s;
-     animation-fill-mode: forwards; 
-     transition: 0.8s ease;
-}
-
 .btn-outline-reverse:hover, .btn:hover, .btn-outline:hover{
-    animation: 2s rubberBand 1;
+    animation: 3s breathe infinite;
 }
 
 .carouselMob{
@@ -116,10 +111,6 @@ nav{
     transition: 0.8s ease;
 }
 
-.text-btn:hover{
-    font-size: 22px;
-}
-
 /* text-button */
 button{
     border: none;
@@ -144,7 +135,6 @@ button{
 }
 
 .btn:hover{
-    font-size: 17px;
     color: #fff;
 }
 
@@ -185,14 +175,6 @@ button{
     transition: 1s ease ;
 }
 
-.btn-outline-reverse:hover{
-    font-size: 17px;
-}
-
-.btn-outline:hover{
-    font-size: 17px;
-
-}
 
 /* ===LOGO=== */
 .logo{
@@ -367,7 +349,7 @@ button{
 
 .com-flex{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .com-flex .card{
@@ -451,6 +433,10 @@ button{
     font-size: 25px;
 }
 
+.index-welcome-flex{
+    align-items: center;
+}
+
 
 @media all and (max-width:400px){
     .join-flex{
@@ -531,6 +517,7 @@ button{
     color: #5F6B80;
     transition: 0.4s ease;
     margin: auto ;
+    /* margin-left: 20px; */
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-link:hover{
@@ -542,7 +529,7 @@ button{
 }
 
 .about-main{
-    margin-top: 40px;
+    padding-top: 90px;
     align-items: center;
 }
 
@@ -587,8 +574,9 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     min-height: max-content;
-    padding: 20px 10px;
+    padding: 20px 20px;
 }
 
 .img-card{
@@ -636,6 +624,8 @@ button{
     #card-slot{
         overflow-x: scroll;
         scroll-behavior: smooth;
+        justify-content: flex-start;
+        margin-right: 20px;
     }
 
     #card-slot::-webkit-scrollbar{
@@ -678,8 +668,14 @@ button{
     text-align: center;
 }
 
-.gallery-flex .col img{
+.gallery-flex .Mycol img{
     width: 100%;
+}
+
+.Mycol{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
 }
 
 .sec-1, .sec-2{
@@ -909,6 +905,12 @@ footer{
 @media all and (max-width:1024px){
     /* ==== INDEX ==== */
 
+    .index-logo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
 
 
     .welcome{
@@ -966,9 +968,24 @@ footer{
         margin-bottom: 10px;
     }
 
+    
+    .join-flex{
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 10px;
+    }
+
+    .join-flex .text{
+        text-align: center;
+     }
+
     /* ===ABOUT!!!!!!!=== */
     .nav-group{
         display: none;
+    }
+
+    .Mycol{
+        width: 100%;
     }
 
     .about-nav{
@@ -1010,17 +1027,6 @@ footer{
     #media66{
         width: 100%;
     }
-
-
-    .join-flex{
-        flex-direction: column;
-        justify-content: center;
-        padding: 15px 0
-    }
-
-    .join-flex .text{
-        text-align: center;
-     }
 
     .contact-btn{
         width: 100%;
@@ -1205,48 +1211,19 @@ footer{
   }
 }
 
-@keyframes rubberBand {
+@keyframes breathe {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  30% {
-    -webkit-transform: scale3d(1.10, 0.75, 1);
-    transform: scale3d(1.10, 0.75, 1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.10, 1);
-    transform: scale3d(0.75, 1.10, 1);
-  }
-
   50% {
-    -webkit-transform: scale3d(1.05, 0.85, 1);
-    transform: scale3d(1.05, 0.85, 1);
-  }
-
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes popup {
-  from{
-    transform: scale(1);
-  }
-  to{
-      transform: scale(1.2);
   }
 }
