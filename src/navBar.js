@@ -1,6 +1,11 @@
-let navBar = document.getElementById("navBar");
+let navBar = document.getElementById("navBar"),
+    navDrop = document.getElementById("navBar-Personal"),
+    navIcon = document.getElementById("navIcon");
 
 
+if (navDrop.style.visibility == "visible") {
+    navIcon.src = "assets/images/icon/close.svg";
+}
 
 window.addEventListener("scroll", ()=>{
     let Offset = pageYOffset;

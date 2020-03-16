@@ -254,6 +254,11 @@ button{
     cursor: pointer;
 }
 
+#togBtn{
+    border: none;
+    background: transparent;
+}
+
 .btn{
     font-family: 'heebo';
     font-weight: 500;
