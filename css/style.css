@@ -4,12 +4,13 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+html body{
     color: #5F6B80;
 }
 
-#nav{
-    width: 100vw;
+.navbar{
+    background-color: rgb(255, 255, 255);
+    transition: 0.6s ease;
 }
 
 a, a:focus, a:hover{
@@ -67,14 +68,8 @@ nav{
     
 }
 
-.gallery-flex .col img:hover{
-     animation: popup 3s;
-     animation-fill-mode: forwards; 
-     transition: 0.8s ease;
-}
-
 .btn-outline-reverse:hover, .btn:hover, .btn-outline:hover{
-    animation: 2s rubberBand 1;
+    animation: 3s breathe infinite;
 }
 
 .carouselMob{
@@ -102,6 +97,37 @@ nav{
     height: 15px;
 }
 
+/* ====toper=== */
+
+.back-top{
+    position: fixed;
+    bottom: 200px;
+    right: 10px;
+}
+
+.back-top button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #4285F4;
+    border: none;
+    transition: 3s ease ;
+    display: none;
+}
+
+.back-top button i{
+    position: relative;
+    /* font-size: 35px; */
+}
+
 
 /* ===BUTTON=== */
 /* text-button */
@@ -114,10 +140,6 @@ nav{
     color: #4285F4;
     font-size: 20px;
     transition: 0.8s ease;
-}
-
-.text-btn:hover{
-    font-size: 22px;
 }
 
 /* text-button */
@@ -144,7 +166,6 @@ button{
 }
 
 .btn:hover{
-    font-size: 17px;
     color: #fff;
 }
 
@@ -185,14 +206,6 @@ button{
     transition: 1s ease ;
 }
 
-.btn-outline-reverse:hover{
-    font-size: 17px;
-}
-
-.btn-outline:hover{
-    font-size: 17px;
-
-}
 
 /* ===LOGO=== */
 .logo{
@@ -367,7 +380,7 @@ button{
 
 .com-flex{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .com-flex .card{
@@ -451,6 +464,10 @@ button{
     font-size: 25px;
 }
 
+.index-welcome-flex{
+    align-items: center;
+}
+
 
 @media all and (max-width:400px){
     .join-flex{
@@ -502,7 +519,7 @@ button{
 /* === ABOUT === */
 
 .about-container{
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 
@@ -531,6 +548,7 @@ button{
     color: #5F6B80;
     transition: 0.4s ease;
     margin: auto ;
+    margin-left: 50px;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-link:hover{
@@ -542,12 +560,13 @@ button{
 }
 
 .about-main{
-    margin-top: 40px;
+    padding-top: 90px;
     align-items: center;
 }
 
 .about-text{
-    padding-left: 40px;
+    padding-left: 20px;
+    width: 100%;
 }
 
 .about-text .title{
@@ -587,8 +606,9 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 auto;
     min-height: max-content;
-    padding: 20px 10px;
+    padding: 20px 20px;
 }
 
 .img-card{
@@ -632,10 +652,16 @@ button{
     .navbar .navbar-collapse .navbar-nav{
         align-items: flex-start;
     }
+
+    .nav-link{
+        margin-left: 0;
+    }
     
     #card-slot{
         overflow-x: scroll;
         scroll-behavior: smooth;
+        justify-content: flex-start;
+        margin-right: 20px;
     }
 
     #card-slot::-webkit-scrollbar{
@@ -678,8 +704,14 @@ button{
     text-align: center;
 }
 
-.gallery-flex .col img{
+.gallery-flex .Mycol img{
     width: 100%;
+}
+
+.Mycol{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
 }
 
 .sec-1, .sec-2{
@@ -795,7 +827,7 @@ input:focus, textarea:focus{
 .input-group{
     padding: 50px 30px;
     border: 1px solid rgba(122, 122, 122, 0.212);
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -909,6 +941,12 @@ footer{
 @media all and (max-width:1024px){
     /* ==== INDEX ==== */
 
+    .index-logo{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
 
 
     .welcome{
@@ -966,9 +1004,24 @@ footer{
         margin-bottom: 10px;
     }
 
+    
+    .join-flex{
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 10px;
+    }
+
+    .join-flex .text{
+        text-align: center;
+     }
+
     /* ===ABOUT!!!!!!!=== */
     .nav-group{
         display: none;
+    }
+
+    .Mycol{
+        width: 100%;
     }
 
     .about-nav{
@@ -1011,17 +1064,6 @@ footer{
         width: 100%;
     }
 
-
-    .join-flex{
-        flex-direction: column;
-        justify-content: center;
-        padding: 15px 0
-    }
-
-    .join-flex .text{
-        text-align: center;
-     }
-
     .contact-btn{
         width: 100%;
     }
@@ -1063,9 +1105,6 @@ footer{
         padding: 0 15px;
     }
 
-     .blue-div{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
-    }
 }
 
 @media all and (max-width: 430px){
@@ -1205,48 +1244,19 @@ footer{
   }
 }
 
-@keyframes rubberBand {
+@keyframes breathe {
   from {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  30% {
-    -webkit-transform: scale3d(1.10, 0.75, 1);
-    transform: scale3d(1.10, 0.75, 1);
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.10, 1);
-    transform: scale3d(0.75, 1.10, 1);
-  }
-
   50% {
-    -webkit-transform: scale3d(1.05, 0.85, 1);
-    transform: scale3d(1.05, 0.85, 1);
-  }
-
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
 
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes popup {
-  from{
-    transform: scale(1);
-  }
-  to{
-      transform: scale(1.2);
   }
 }
