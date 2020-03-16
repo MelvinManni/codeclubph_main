@@ -234,14 +234,17 @@ button{
 
 /* ====INDEX==== */
 
-.index-logo{
-    position: absolute;
-    top: 20px;
-}
 
 .welcome{
     padding-top: 1em;
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text{
+    align-self: center;
+    margin: auto 0;
 }
 
 .welcome-text{
@@ -468,10 +471,10 @@ button{
     font-family: 'poppins';
     font-size: 25px;
 }
-
+/* 
 .index-welcome-flex{
     align-items: center;
-}
+} */
 
 
 @media all and (max-width:400px){
@@ -946,14 +949,6 @@ footer{
 
 @media all and (max-width:1024px){
     /* ==== INDEX ==== */
-
-    .index-logo{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
 
     .welcome{
         padding:0 20px;
