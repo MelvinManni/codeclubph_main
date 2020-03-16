@@ -234,6 +234,11 @@ button{
 
 /* ====INDEX==== */
 
+.index-logo{
+    position: absolute;
+    top: 20px;
+}
+
 .welcome{
     padding-top: 1em;
     padding-left: 40px;
