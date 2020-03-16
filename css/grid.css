@@ -110,10 +110,13 @@ width: 99.7%;
 .carousel-card{
     margin: 0 auto;
     width: 90%;
-    min-height: 200px;
+    min-height: 300px;
     max-height: max-content;
     border: 1px solid #E1E1E1 ;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .center-card{

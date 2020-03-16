@@ -28,38 +28,45 @@ a, a:focus, a:hover{
 *:focus{
     outline: none;
 }
+*:active{
+    outline: none;
+}
+
+button:active, a:active, button:focus, a:focus{
+    outline: none;
+}
 
 .carousel-item-animation:hover{
-    animation: 3s float infinite;
+    animation: 2.5s float infinite;
 }
 
 .card:hover{
-    animation: 3s float infinite;
+    animation: 2.5s float infinite;
 }
 
 .fadeInUpAnimation{
-    animation: 3s fadeInUp 1 ;
+    animation: 2s fadeInUp 1 ;
 }
 
 .slideleft{
-    animation: 4s slideleft 1;
+    animation: 3s slideleft 1;
 }
 
 .slideright{
-    animation: 4s slideright 1;
-    animation-delay: 0.2s;
+    animation: 3s slideright 1;
+    animation-delay: 0.3s;
 }
 
 .slideContact{
-    animation: 4s slideright 1;
+    animation: 2s slideright 1;
 }
 
 .round-image{
-    transition: 3s ease;
-}
+    transition: 0.6s ease;
+} 
 
 .round-image:hover{
-    animation: 4s spinningWheel 1 ;
+    animation: 2s spinningWheel 1 ;
 }
 
 nav{
@@ -68,15 +75,113 @@ nav{
     
 }
 
-.btn-outline-reverse:hover, .btn:hover, .btn-outline:hover{
-    animation: 3s breathe infinite;
+.btn-outline-reverse:hover, .btn:hover, .btn-outline:hover, .back-top button:hover{
+    animation: 0.7s breathe 1;
+    animation-fill-mode: forwards;
 }
 
 .carouselMob{
     display: none;
+    color: #6FA3F8;
 }
 
 
+/* ==== input Label styling === */
+
+
+.group  { 
+  position:relative; 
+  padding-bottom:35px;
+}
+input 				{
+    font-size:17px;
+    padding:0px 0px 5px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    border-bottom:1px solid rgba(122, 122, 122, 0.685);
+    color: #66686A;
+    font-size: 14px;
+    font-family: 'heebo';
+    font-weight: 400;
+}
+
+
+input:focus{ 
+    outline:none; 
+}
+
+/* LABEL ======================================= */
+label 				 {
+  color:#66686A; 
+  font-family: 'heebo';
+  font-size:17px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:-15px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label 		{
+  top:-39px;
+  font-size:12px;
+  color:#7A7A7A;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ 
+
+    position:relative; 
+    display:block; 
+    width:100%; 
+}
+
+
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#6FA3F8; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
 
 
 /* ====! Indicator for Carousel=== */
@@ -101,8 +206,9 @@ nav{
 
 .back-top{
     position: fixed;
-    bottom: 200px;
+    bottom: 60px;
     right: 10px;
+    z-index: 200;
 }
 
 .back-top button{
@@ -117,7 +223,7 @@ nav{
     background-color: #fff;
     background-position: center;
     background-repeat: no-repeat;
-    color: #4285F4;
+    color: #1c1c1c;
     border: none;
     transition: 3s ease ;
     display: none;
@@ -146,6 +252,11 @@ nav{
 button{
     border: none;
     cursor: pointer;
+}
+
+#togBtn{
+    border: none;
+    background: transparent;
 }
 
 .btn{
@@ -234,14 +345,17 @@ button{
 
 /* ====INDEX==== */
 
-.index-logo{
-    position: absolute;
-    top: 20px;
-}
 
 .welcome{
     padding-top: 1em;
     padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text{
+    align-self: center;
+    margin: auto 0;
 }
 
 .welcome-text{
@@ -269,6 +383,7 @@ button{
 
 .welcome-btn{
     margin-top: 50px;
+    width: max-content;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -468,10 +583,10 @@ button{
     font-family: 'poppins';
     font-size: 25px;
 }
-
+/* 
 .index-welcome-flex{
     align-items: center;
-}
+} */
 
 
 @media all and (max-width:400px){
@@ -611,6 +726,7 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
     min-height: max-content;
     padding: 20px 20px;
@@ -777,19 +893,25 @@ button{
 }
 
 
-input, textarea {
+textarea {
     border-width: 0 0 1px 0;
     border-style: solid;
     border-color: rgba(122, 122, 122, 0.685);
     width: 100%;
     display: block;
+    color: #66686A;
+    font-size: 14px;
     font-family: 'heebo';
     font-weight: 400;
 
 }
 
-input{
-    padding: 10px 0;
+
+#texarea-label {
+    position: relative;
+    font-size: 14px;
+    font-family: 'heebo';
+    color: #66686A;
 }
 
 .textarea-group{
@@ -809,11 +931,6 @@ input{
 }
 
 
-input::placeholder{
-    font-size: 14px;
-    font-family: 'heebo';
-    font-weight: 400;
-}
 
 
 label{
@@ -836,17 +953,6 @@ input:focus, textarea:focus{
     margin: auto;
 }
 
-
-
-.input-label{
-    visibility: collapse;
-    font-size: 9px;
-    font-family: 'heebo';
-    font-weight: 400;
-    transition: 1s ease;
-    animation: slide 2s 1;
-    animation-delay: 3s;  
-}
 
 .input-group:focus{
     visibility: visible;
@@ -946,16 +1052,13 @@ footer{
 @media all and (max-width:1024px){
     /* ==== INDEX ==== */
 
-    .index-logo{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-
     .welcome{
         padding:0 20px;
+    }
+
+    .welcome a {
+        text-align: center;
+        margin: 0 auto;
     }
     
     .carouselMob{
@@ -1252,16 +1355,25 @@ footer{
 @keyframes breathe {
   from {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    transform: scale3d(0.8, 0.8, 0.8);
   }
+  to {    
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.05, 1.05, 1.05);
+    transform: translateY(-4px);
+  }
+}
 
-  50% {
-    -webkit-transform: scale3d(1.2, 1.2, 1.2);
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
 
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
+@-webkit-keyframes inputHighlighter {
+	from { background:#6FA3F8; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#6FA3F8; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#6FA3F8; }
+  to 	{ width:0; background:transparent; }
 }
