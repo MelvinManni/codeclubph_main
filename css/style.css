@@ -759,11 +759,19 @@ input{
 
 
 input::placeholder{
-    padding-left: 10px;
     font-size: 14px;
     font-family: 'heebo';
     font-weight: 400;
 }
+
+
+label{
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'heebo';
+    font-weight: 400;
+}
+
 
 input:focus, textarea:focus{
     border-bottom: 2px solid #6FA3F8;
@@ -989,6 +997,11 @@ footer{
         width: 100%;
     }
 
+
+    .join-flex{
+        flex-direction: column;
+    }
+
     .contact-btn{
         width: 100%;
     }
@@ -1030,6 +1043,9 @@ footer{
         padding: 0 15px;
     }
 
+     .blue-div{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
+    }
 }
 
 @media all and (max-width: 430px){
@@ -1069,8 +1085,8 @@ footer{
 @keyframes slideleft   {
     from {
     opacity: 0;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(0, 0, 100%);
+    transform: translate3d(0, 0, 100%);
   }
 
   to {
@@ -1088,8 +1104,8 @@ footer{
 @keyframes slideright {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(0, 0, 100%);
+    transform: translate3d(0, 0, 100%);
   }
 
   to {
