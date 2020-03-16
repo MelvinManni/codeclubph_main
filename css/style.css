@@ -488,7 +488,7 @@ button{
 /* === ABOUT === */
 
 .about-container{
-    padding: 0 40px;
+    padding: 0 20px;
 }
 
 
@@ -517,7 +517,7 @@ button{
     color: #5F6B80;
     transition: 0.4s ease;
     margin: auto ;
-    /* margin-left: 20px; */
+    margin-left: 50px;
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-link:hover{
@@ -534,7 +534,8 @@ button{
 }
 
 .about-text{
-    padding-left: 40px;
+    padding-left: 20px;
+    width: 100%;
 }
 
 .about-text .title{
@@ -574,7 +575,7 @@ button{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    margin: 0 auto;
     min-height: max-content;
     padding: 20px 20px;
 }
@@ -619,6 +620,10 @@ button{
 
     .navbar .navbar-collapse .navbar-nav{
         align-items: flex-start;
+    }
+
+    .nav-link{
+        margin-left: 0;
     }
     
     #card-slot{
@@ -791,7 +796,7 @@ input:focus, textarea:focus{
 .input-group{
     padding: 50px 30px;
     border: 1px solid rgba(122, 122, 122, 0.212);
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -1069,9 +1074,6 @@ footer{
         padding: 0 15px;
     }
 
-     .blue-div{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
-    }
 }
 
 @media all and (max-width: 430px){
