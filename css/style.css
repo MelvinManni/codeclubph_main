@@ -37,11 +37,11 @@ a, a:focus, a:hover{
 }
 
 .slideleft{
-    animation: 2s slideleft 1;
+    animation: 4s slideleft 1;
 }
 
 .slideright{
-    animation: 2s slideright 1;
+    animation: 4s slideright 1;
     animation-delay: 0.2s;
 }
 
@@ -700,6 +700,16 @@ button{
     .sec-1, .sec-2{
         margin-right: 0px;
     }
+
+    .join-flex{
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0
+    }
+
+    .join-flex .text{
+        text-align: center;
+     }
 }
 
 
@@ -1000,7 +1010,13 @@ footer{
 
     .join-flex{
         flex-direction: column;
+        justify-content: center;
+        padding: 15px 0
     }
+
+    .join-flex .text{
+        text-align: center;
+     }
 
     .contact-btn{
         width: 100%;
