@@ -69,7 +69,8 @@ nav{
 }
 
 .btn-outline-reverse:hover, .btn:hover, .btn-outline:hover{
-    animation: 1s breathe infinite;
+    animation: 0.7s breathe 1;
+    animation-fill-mode: forwards;
 }
 
 .carouselMob{
@@ -1254,16 +1255,11 @@ footer{
 @keyframes breathe {
   from {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    transform: scale3d(0.8, 0.8, 0.8);
   }
-
-  50% {
-    -webkit-transform: scale3d(1.2, 1.2, 1.2);
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+  to {    
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.05, 1.05, 1.05);
+    transform: translateY(-4px);
   }
 }
