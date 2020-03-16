@@ -1,5 +1,9 @@
 /* ===GENERAL=== */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     color: #5F6B80;
 }
