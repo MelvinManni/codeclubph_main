@@ -14,7 +14,9 @@ navIcon.addEventListener("click", () => {
 
         navClose.style.display = 'block';
         navIcon.style.display = 'none'
-
+    } else{
+        navClose.style.display = 'none';
+        navIcon.style.display = 'block'
     }
 });
 
@@ -25,6 +27,8 @@ navClose.addEventListener("click", ()=>{
 
         navClose.style.display = 'none';
         navIcon.style.display = 'block'
-
+    } else{
+        navClose.style.display = 'block';
+        navIcon.style.display = 'none'
     }
 })
