@@ -650,7 +650,9 @@ button{
     border: 1px solid #4285F4;
     border-radius: 50%;
     transition: 1s ease all;
+    animation: 1.5s slideright 1;
 }
+
 
 
 .norm-tog{
@@ -658,6 +660,7 @@ button{
     height: 45px;
     border-radius: 50%;
     transition: 1s ease all;
+    animation: 1.5s slideright 1;
 }
 
 

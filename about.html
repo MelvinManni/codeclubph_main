@@ -30,11 +30,15 @@
                         </div>
                     </div>
                 </a>
-                <button onclick="clicked()" class="navbar-toggler" type="button" id="togBtn" data-toggle="collapse"
+                <button class="navbar-toggler" type="button" id="togBtn" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <img width="45px" src="assets/images/icon/menu.svg" id="navIcon" alt="toggle" class="norm-tog">
-                    <img width="45px" src="assets/images/icon/close.svg" id="navIconClose" alt="toggle" class="circle-tog">
+                    <div id="navIcon">
+                        <img src="assets/images/icon/menu.svg" alt="toggle" class="norm-tog">
+                    </div>
+                    <div id="navIconClose">
+                        <img  src="assets/images/icon/close.svg" alt="closeTog" class="circle-tog">
+                    </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav" id="navBar-Personal">
@@ -195,7 +199,6 @@
                     </form>
                 </div>
             </div>
-
         </section>
     </div>
 
@@ -224,12 +227,12 @@
     </footer>
 
     <!--Javascript-->
+    <script src="src/navToggle.js"></script>
     <script src="src/top-pageBtn.js"></script>
     <script src="src/navBar.js"></script>
     <script src="src/about-card.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.js"></script>
 </body>
 
 </html>

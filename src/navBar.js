@@ -1,11 +1,6 @@
-let navBar = document.getElementById("navBar"),
-    navDrop = document.getElementById("navBar-Personal"),
-    navIcon = document.getElementById("navIcon");
+let navBar = document.getElementById("navBar"),    
 
 
-if (navDrop.style.visibility == "visible") {
-    navIcon.src = "assets/images/icon/close.svg";
-}
 
 window.addEventListener("scroll", ()=>{
     let Offset = pageYOffset;
@@ -16,5 +11,3 @@ window.addEventListener("scroll", ()=>{
         navBar.style.backgroundColor = "rgba(255, 255, 255, 1)"   
     }
 });
-
-
