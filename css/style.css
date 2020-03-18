@@ -25,6 +25,10 @@ a, a:focus, a:hover{
     line-height: 30px;
 }
 
+#navIconClose{
+    display: none;
+}
+
 *:focus{
     outline: none;
 }
@@ -637,6 +641,25 @@ button{
 
 
 /* === ABOUT === */
+
+
+.circle-tog{
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #4285F4;
+    border-radius: 50%;
+    transition: 1s ease all;
+}
+
+
+.norm-tog{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 1s ease all;
+}
+
 
 .about-container{
     padding: 0 20px;
