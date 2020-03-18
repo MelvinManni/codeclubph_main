@@ -58,7 +58,6 @@ button:active, a:active, button:focus, a:focus{
 
 .slideright{
     animation: 3s slideright 1;
-    animation-delay: 0.3s;
 }
 
 .slideContact{
