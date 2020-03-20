@@ -21,11 +21,15 @@ a, a:focus, a:hover{
     outline: none;
 }
 
+#close{
+    display: none;
+}
+
 .content{
     line-height: 30px;
 }
 
-#navIconClose{
+.navClose{
     display: none;
 }
 
@@ -257,7 +261,7 @@ button{
     cursor: pointer;
 }
 
-#togBtn{
+.togBtn{
     border: none;
     background: transparent;
 }
@@ -641,27 +645,23 @@ button{
 
 /* === ABOUT === */
 
-
 .circle-tog{
     padding: 5px;
     width: 40px;
     height: 40px;
     border: 1px solid #4285F4;
     border-radius: 50%;
-    transition: 1s ease all;
-    animation: 0.33s slideright 1;
+    transition: 0.2s ease all;
+    animation: 0.2s slideright 1;
 }
-
-
 
 .norm-tog{
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    transition: 1s ease all;
-    animation: 0.33s slideright 1;
+    transition: 0.2s ease all;
+    animation: 0.2s slideright 1;
 }
-
 
 .about-container{
     padding: 0 20px;

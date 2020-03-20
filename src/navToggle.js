@@ -1,34 +1,22 @@
 
 let navIcon = document.getElementById("navIcon");
-let navClose = document.getElementById("navIconClose");
+let navImg = document.getElementById("navImg");
 
 
 
 
 
 
+// navIcon.addEventListener("click", ()=>{
 
-navIcon.addEventListener("click", () => {
+    navImg.addEventListener("click", ()=>{
 
-    if (navIcon.style.display = 'block') {
+        if (navImg.src = "assets/images/icon/close.svg") {
+            navImg.src = "assets/images/icon/menu.svg"
+        }
+        //  else {
+        //     navImg.src = "assets/images/icon/close.svg";
+        // } 
+    })
 
-        navClose.style.display = 'block';
-        navIcon.style.display = 'none'
-    } else{
-        navClose.style.display = 'none';
-        navIcon.style.display = 'block'
-    }
-});
-
-
-navClose.addEventListener("click", ()=>{
-
-    if (navClose.style.display = 'block') {
-
-        navClose.style.display = 'none';
-        navIcon.style.display = 'block'
-    } else{
-        navClose.style.display = 'block';
-        navIcon.style.display = 'none'
-    }
-})
+// })
