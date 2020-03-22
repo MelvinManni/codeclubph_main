@@ -845,7 +845,7 @@ button{
 .about-logo{
     position: relative;
     top: 8px;
-    left: -15px;
+    left: -5px;
 }
 
 
@@ -853,7 +853,7 @@ button{
 @media all and (max-width: 1024px){
 
     .navbar .navbar-collapse .navbar-nav{
-        align-items: flex-start;
+        align-items: center;
     }
 
     .nav-link{
