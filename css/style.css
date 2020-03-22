@@ -732,7 +732,7 @@ button{
 }
 
 .navbar .navbar-collapse .navbar-nav{
-    margin-left: auto;
+    display: flex;
     justify-content: left;
     align-items: center;
 }
@@ -845,7 +845,7 @@ button{
 .about-logo{
     position: relative;
     top: 8px;
-    left: 15px;
+    left: -15px;
 }
 
 
