@@ -3,25 +3,25 @@ let cardSlot = document.getElementById("card-slot");
 let slotDetails = [
     {
         src: "assets/images/Meet-People/1.png",
-        name:"Anderson John",
-        role:"Code Club Lead"
+        name: "Anderson John",
+        role: "Code Club Lead"
     },
 
     {
         src: "assets/images/Meet-People/2.png",
-        name:"Jessica Mike",
+        name: "Jessica Mike",
         role: "Code Club Lead"
     },
 
     {
         src: "assets/images/Meet-People/3.png",
-        name:"Sarah John",
+        name: "Sarah John",
         role: "Code Club Lead"
     },
 
     {
-        src:"assets/images/Meet-People/4.png",
-        name:"Lisa Mendez",
+        src: "assets/images/Meet-People/4.png",
+        name: "Lisa Mendez",
         role: "Code Club Lead"
     }
 ]

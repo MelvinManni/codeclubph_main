@@ -21,8 +21,16 @@ a, a:focus, a:hover{
     outline: none;
 }
 
+#close{
+    display: none;
+}
+
 .content{
     line-height: 30px;
+}
+
+.navClose{
+    display: none;
 }
 
 *:focus{
@@ -54,7 +62,6 @@ button:active, a:active, button:focus, a:focus{
 
 .slideright{
     animation: 3s slideright 1;
-    animation-delay: 0.3s;
 }
 
 .slideContact{
@@ -75,7 +82,7 @@ nav{
     
 }
 
-.btn-outline-reverse:hover, .btn:hover, .btn-outline:hover, .back-top button:hover{
+.btn-outline-reverse:focus, .btn:focus, .btn-outline:focus, .back-top button:focus{
     animation: 0.7s breathe 1;
     animation-fill-mode: forwards;
 }
@@ -254,7 +261,7 @@ button{
     cursor: pointer;
 }
 
-#togBtn{
+.togBtn{
     border: none;
     background: transparent;
 }
@@ -638,6 +645,81 @@ button{
 
 /* === ABOUT === */
 
+.navbar-light .navbar-toggler,
+.navbar-light .navbar-toggler:focus{
+  background: none;
+	border:none;
+	outline:none;
+}
+
+.navbar-toggler {
+  cursor: pointer;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  right: 10px;
+  font-size: 1.25rem;
+  line-height: 1rem;
+  border-radius: 0.25rem;
+}
+.navbar-toggler span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #5F6B80;
+  border-radius: 3px;
+  opacity: 1;
+  left: 25%;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+.navbar-toggler span:nth-child(1) {
+  top: 20%;
+}
+.navbar-toggler span:nth-child(2), .navbar-toggler span:nth-child(3) {
+  top: 50%;
+}
+.navbar-toggler span:nth-child(4) {
+  top: 80%;
+}
+.navbar-toggler.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.navbar-toggler.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+.navbar-toggler.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.navbar-toggler.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+/* ===NAV+++ */
+
+.circle-tog{
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #4285F4;
+    border-radius: 50%;
+    transition: 0.2s ease all;
+    animation: 0.2s slideright 1;
+}
+
+.norm-tog{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: 0.2s ease all;
+    animation: 0.2s slideright 1;
+}
+
 .about-container{
     padding: 0 20px;
 }
@@ -651,7 +733,7 @@ button{
 }
 
 .navbar .navbar-collapse .navbar-nav{
-    margin-left: auto;
+    display: flex;
     justify-content: left;
     align-items: center;
 }
@@ -771,7 +853,7 @@ button{
 @media all and (max-width: 1024px){
 
     .navbar .navbar-collapse .navbar-nav{
-        align-items: flex-start;
+        align-items: center;
     }
 
     .nav-link{
