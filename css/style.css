@@ -657,7 +657,6 @@ button{
   position: relative;
   width: 2rem;
   height: 2rem;
-  padding: 0.5rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1rem;
   border-radius: 0.25rem;
@@ -667,7 +666,7 @@ button{
   position: absolute;
   height: 5px;
   width: 100%;
-  background: #4285F4;
+  background: #5F6B80;
   border-radius: 3px;
   opacity: 1;
   left: 25%;
