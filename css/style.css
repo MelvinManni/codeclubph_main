@@ -673,7 +673,7 @@ button{
   position: relative;
   width: 2rem;
   height: 2rem;
-  padding: 0.5rem 0.75rem;
+  right: 10px;
   font-size: 1.25rem;
   line-height: 1rem;
   border-radius: 0.25rem;
@@ -749,7 +749,7 @@ button{
 }
 
 .navbar .navbar-collapse .navbar-nav{
-    margin-left: auto;
+    display: flex;
     justify-content: left;
     align-items: center;
 }
@@ -869,7 +869,7 @@ button{
 @media all and (max-width: 1024px){
 
     .navbar .navbar-collapse .navbar-nav{
-        align-items: flex-start;
+        align-items: center;
     }
 
     .nav-link{
