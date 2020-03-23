@@ -66,9 +66,18 @@ button.main{
 .section{
     width: 100%;
     position: relative;
+
     .section-content-container{
         height: 100%;
 
+    }
+
+    &.has-slides{
+        & > div{
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 0;
+        }
     }
     
     .section-content-heading{
@@ -448,29 +457,104 @@ $minHght: 600px;
     }
 }
 
-.section.communities{
+.section.has-slides{
+    .section-content-heading{
+        text-align: center;
+    }
     .carousel.slide{
-        width: fit-content;
+        width: 90%;
         margin: 1em auto;
 
+
         .carousel-indicators{
+            position: relative;
+
             li{
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
+                background: lighten($color: $primary, $amount: 15);
+                margin: 0 10px;
+
+                &.active{
+                    background: $primary;
+                }
+                &:hover{
+                    transform: translateY(-2.5px);
+                    background: $primary-dark;
+                }
             }
         }
 
         .carousel-inner{
+            margin: 0 0 1em 0;
             .carousel-item{
-                width: 300px;
-                height: 300px;
-                padding: 1em;
-                border: 2px solid $main-text;
-                border-radius: 1em;
-                text-align: left;
+                width: 100%;
+                min-height: 300px;
+
+                .item-wrapper{
+                    margin: 0 2em;
+                    padding: 1em;
+                    border: 1px solid $main-text;
+                    color: $main-text;
+                    border-radius: 0.25em;
+                    text-align: center;
+    
+                }
+
+                & div{
+                    margin: 1em 0;
+                }
     
             }
         }
     }
+
+    .no-carousel.slide{
+        display: none;
+    }
+
+    @media screen and (min-width: 769px){
+        .carousel.slide{
+            display: none;
+        }
+        .no-carousel.slide{
+            display: block;
+
+            .no-carousel-inner{
+                margin: 1em;
+                display: grid;
+                row-gap: 2em;                                                                            
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+                .no-carousel-item{
+                    width: 100%;
+                    min-height: 300px;
+    
+                    .item-wrapper{
+                        margin: 0 1em;
+                        padding: 1em;
+                        border: 1px solid $main-text;
+                        color: $main-text;
+                        border-radius: 0.25em;
+                        text-align: center;
+                        height: 100%;   
+        
+                    }
+    
+                    & div{
+                        margin: 1em 0;
+                    }
+        
+                }
+            }
+    
+        }
+    
+    }
+
+}
+
+
+.section.communities{
 }
