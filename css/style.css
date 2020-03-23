@@ -326,9 +326,25 @@ button{
 
 
 /* ===LOGO=== */
+.logoImg{
+    width: 50px;
+    border-radius: 50%;
+}
 .logo{
     font-size: 22px;
     font-family: 'web sans';
+}
+
+.logoFlex{
+    display: flex;
+    height: max-content;
+    align-items: center;
+}
+
+.logo-text {
+    position: relative;
+    top: 10px;
+    margin-left: 15px;
 }
 .first-brace{
     font-size: inherit;
@@ -666,8 +682,8 @@ button{
   display: block;
   position: absolute;
   height: 5px;
-  width: 100%;
-  background: #5F6B80;
+  width: 80%;
+  background: #66686A;
   border-radius: 3px;
   opacity: 1;
   left: 25%;
@@ -675,13 +691,13 @@ button{
   transition: 0.25s ease-in-out;
 }
 .navbar-toggler span:nth-child(1) {
-  top: 20%;
+  top: 25%;
 }
 .navbar-toggler span:nth-child(2), .navbar-toggler span:nth-child(3) {
   top: 50%;
 }
 .navbar-toggler span:nth-child(4) {
-  top: 80%;
+  top: 75%;
 }
 .navbar-toggler.open span:nth-child(1) {
   top: 18px;
