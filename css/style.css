@@ -326,13 +326,13 @@ button{
 
 
 /* ===LOGO=== */
-.logoImg{
-    width: 50px;
-    border-radius: 50%;
-}
+
+
 .logo{
     font-size: 22px;
     font-family: 'web sans';
+    position: relative;
+    top: 10px;
 }
 
 .logoFlex{
@@ -342,9 +342,7 @@ button{
 }
 
 .logo-text {
-    position: relative;
-    top: 10px;
-    margin-left: 15px;
+    margin-left: 0px;
 }
 .first-brace{
     font-size: inherit;
@@ -358,7 +356,7 @@ button{
     background: transparent -webkit-linear-gradient(180deg, #4285F4 0%, #4285F4 48%, #6FA3F8 54%, #6FA3F8 100%) 0% 0% no-repeat padding-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    margin-right: 15px;
+    margin-right: 10px;
     margin-left: 5px;
 }
 
