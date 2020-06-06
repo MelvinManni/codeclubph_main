@@ -90,6 +90,13 @@ section{
 	}
 }
 
+
+@media all and (min-width: 764px){
+	.image-height{
+		min-height: 90vh;
+	}
+}
+
 .cc-btn:hover {
 	box-shadow: 0 10px 52px rgba(139, 140, 122, 0.23);
 }
@@ -313,9 +320,11 @@ section{
 }
 
 @media screen and (max-width: 768px) {
-
+	.image-sect.image-height{
+		height: 200px;
+	}
 	.intro,
-	.intro-img-bg, img-sect {
+	.intro-img-bg {
 		min-height: 40vh !important;
 		max-height: 50vh;
 	}
@@ -426,7 +435,7 @@ section{
 	position: relative;
 	left: 0;
 	top: 0;
-	min-height: 100vh;
+	height: 100%;
 	background: url(../assets/images/person-using-silver-macbook-pro-1181467.png);
 	width: 100%;
 	background-repeat: no-repeat;
@@ -434,6 +443,11 @@ section{
 	background-position: center;
 	margin-top: -10rem;
 	z-index: -1;
+}
+
+
+.image-height{
+	min-height: 60vh;
 }
 
 .slider-card {
