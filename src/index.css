@@ -18,6 +18,10 @@ a:hover {
 	text-decoration: none;
 }
 
+section{
+	position: relative !important;
+}
+
 .cc-btn {
 	padding: 14px 28px;
 	display: inline-block;
@@ -83,6 +87,13 @@ a:hover {
 
 	.m-force {
 		margin-top: 14rem;
+	}
+}
+
+
+@media all and (min-width: 764px){
+	.image-height{
+		min-height: 90vh;
 	}
 }
 
@@ -309,10 +320,17 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-
+	.image-sect.image-height{
+		height: 200px;
+	}
 	.intro,
 	.intro-img-bg {
-		min-height: 50vh;
+		min-height: 40vh !important;
+		max-height: 50vh;
+	}
+
+	.intro-img-bg{
+		height: 50vh;
 	}
 
 	.intro__wrapper {
@@ -363,7 +381,7 @@ a:hover {
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
-	margin-top: 6rem;
+	margin: 6rem 0;
 }
 
 .tech-stack .title {
@@ -417,14 +435,19 @@ a:hover {
 	position: relative;
 	left: 0;
 	top: 0;
-	min-height: 100vh;
+	height: 100%;
 	background: url(../assets/images/person-using-silver-macbook-pro-1181467.png);
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	margin-top: -12rem;
+	margin-top: -10rem;
 	z-index: -1;
+}
+
+
+.image-height{
+	min-height: 60vh;
 }
 
 .slider-card {
