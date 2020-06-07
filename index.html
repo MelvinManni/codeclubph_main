@@ -1,91 +1,420 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Maintenance</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-      <meta name="author" content="CodeclubPH" />
-      <meta name="description" content="The Community of Developers and aspiring developers within the University of Port Harcourt.
-#ForTheLoveofAllThingsTech">
-      <meta name="keywords" content="dsc, Codeclub Port Harcourt codeclubph ,google developers, sub saharan africa, kenya, computer science, nigeria" />
-      <style>
-        html, body {
-  margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
-  height: 100%;
-  background: #EEEEF4;
-  font-weight: 100;
-  user-select: none;
-}
-main {
-  height: 100%;
-  display: flex;
-  margin: 0 5px;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-main h1 {
-  font-size: 3em;
-  font-weight: 100;
-  color: #F44;
-  margin: 0;
-}
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Codeclub PH - Home </title>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/themify-icons/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="lib/owl/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/owl/dist/assets/owl.theme.default.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="src/index.css">
+</head>
 
-main h2 {
-  font-size: 1.5em;
-  font-weight: 100;
-  margin-bottom: 0;
-}
-main h3 {
-  font-size: 1.5em;
-  font-weight: 100;
-  margin-top: 0;
-}
+<body>
+	<section class="container-fluid p-0">
+		<div class="row no-gutters">
+			<div class="col-lg-6 p-0">
+				<div class="intro justify-content-center">
+					<div class="intro__wrapper col-lg-7 ">
+						<h1 class="title">Code Club</h1>
+						<p class="sub-title">Imagine - Code - Create</p>
+						<p class="sub-title">A community for developers and aspiring developers in The University of Port Harcourt</p>
+						<div class="mt-3">
+							<a href="#" class="btn cc-btn btn--primary">Join Now</a>
 
-@media screen and (max-width: 420px) {
-  main h1 {
-  font-size: 20px;
-}
-main h2 {
-  font-size:16px;
-}
-}
-main a {
-  font-size: 1.5em;
-  font-weight: 300;
-  color: #F44;
-  text-decoration: none;
-}
-footer {
-  position: absolute;
-  bottom: 0;
-  margin: 10px;
-  font-weight: 300;
-}
+						</div>
+					</div>
+				</div>
+			</div>
 
-      </style>
-    </head>
+			<div class="col-lg-6 p-0">
+				<div class="intro-img-bg"></div>
+			</div>
+		</div>
 
-    <body>
-      <main>
-        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="70" viewBox="0 0 100 68">
-          <g id="large">
-            <path fill="none" stroke="#F44" d="M55.8 38.5l6.2-1.2c0-1.8-.1-3.5-.4-5.3l-6.3-.2c-.5-2-1.2-4-2.1-6l4.8-4c-.9-1.6-1.9-3-3-4.4l-5.6 3c-1.3-1.6-3-3-4.7-4.1l2-6A30 30 0 0 0 42 8l-3.3 5.4c-2-.7-4.2-1-6.2-1.2L31.3 6c-1.8 0-3.5.1-5.3.4l-.2 6.3c-2 .5-4 1.2-6 2.1l-4-4.8c-1.6.9-3 1.9-4.4 3l3 5.6c-1.6 1.3-3 3-4.1 4.7l-6-2A32.5 32.5 0 0 0 2 26l5.4 3.3c-.7 2-1 4.2-1.2 6.2L0 36.7c0 1.8.1 3.5.4 5.3l6.3.2c.5 2 1.2 4 2.1 6l-4.8 4c.9 1.6 1.9 3 3 4.4l5.6-3c1.4 1.6 3 3 4.7 4.1l-2 6A30.5 30.5 0 0 0 20 66l3.4-5.4c2 .7 4 1 6.1 1.2l1.2 6.2c1.8 0 3.5-.1 5.3-.4l.2-6.3c2-.5 4-1.2 6-2.1l4 4.8c1.6-.9 3-1.9 4.4-3l-3-5.6c1.6-1.3 3-3 4.1-4.7l6 2A32 32 0 0 0 60 48l-5.4-3.3c.7-2 1-4.2 1.2-6.2zm-13.5 4a12.5 12.5 0 1 1-22.6-11 12.5 12.5 0 0 1 22.6 11z" />
-            <animateTransform attributeName="transform" begin="0s" dur="3s" from="0 31 37" repeatCount="indefinite" to="360 31 37" type="rotate" />
-          </g>
-          <g id="small">
-            <path fill="none" stroke="#F44" d="M93 19.3l6-3c-.4-1.6-1-3.2-1.7-4.8L90.8 13c-.9-1.4-2-2.7-3.4-3.8l2.1-6.3A21.8 21.8 0 0 0 85 .7l-3.6 5.5c-1.7-.4-3.4-.5-5.1-.3l-3-5.9c-1.6.4-3.2 1-4.7 1.7L70 8c-1.5 1-2.8 2-3.9 3.5L60 9.4a20.6 20.6 0 0 0-2.2 4.6l5.5 3.6a15 15 0 0 0-.3 5.1l-5.9 3c.4 1.6 1 3.2 1.7 4.7L65 29c1 1.5 2.1 2.8 3.5 3.9l-2.1 6.3a21 21 0 0 0 4.5 2.2l3.6-5.6c1.7.4 3.5.5 5.2.3l2.9 5.9c1.6-.4 3.2-1 4.8-1.7L86 34c1.4-1 2.7-2.1 3.8-3.5l6.3 2.1a21.5 21.5 0 0 0 2.2-4.5l-5.6-3.6c.4-1.7.5-3.5.3-5.1zM84.5 24a7 7 0 1 1-12.8-6.2 7 7 0 0 1 12.8 6.2z" />
-            <animateTransform attributeName="transform" begin="0s" dur="2s" from="0 78 21" repeatCount="indefinite" to="-360 78 21" type="rotate" />
-          </g>
-        </svg>
-        <h1>Beep! Under Maintenance</h1>
-        <h2>Sorry for the inconvenience.</h2>
-      </main>
-      <footer></footer>
-    </body>
+	</section>
+	<section class="container-fluid p-0">
+		<div class="about">
+			<div class="blue-img">
+				<img src="assets/icons/world.svg" alt="">
+			</div>
 
-    </html>
+			<p class="title">
+				About Code Club
+			</p>
+
+			<p class="content col-lg-6 mx-auto">
+				A primary goal of Code Club Uniport is to be inclusive to the largest number of contributors, with the most varied and diverse backgrounds possible. As such, we are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, ability, ethnicity, socioeconomic status, and religion (or lack thereof).
+			</p>
+
+			<div class="mt-3">
+				<a href="about-codeclub" class="btn cc-btn btn--outline is-white">Learn More</a>
+			</div>
+		</div>
+	</section>
+	<section class="tech-stack">
+		<div class=" container-fluid pl-0">
+			<div class="row">
+				<div class="col-lg-6 p-0 ">
+					<div class="image-sect image-height" >
+					</div>
+
+				</div>
+				<div class="col-lg-6 vh-100 pt-2">
+					<div class="col-lg-10 mx-auto mt-3">
+						<p class="title">
+							Technologies That Excite Us
+						</p>
+
+						<p class="content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.
+						</p>
+
+						<p class="content">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna
+							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+							commodo consequat.
+						</p>
+
+						<div id="carouselExampleIndicators3" class=" carousel slide mr-auto ml-auto" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="tech-list-group">
+										<div class="tech-list">
+											<div class="w1">
+												<img width="70%" src="assets/images/icon/html5.svg" alt="">
+											</div>
+
+											<div class="w11 tech-list-text">
+												<p class="tech-list-title">
+													HTML5 Development Tools
+												</p>
+												<p class="tech-list-content">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+													tempor
+													incididunt ut labore et
+													dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													laboris nisi ut
+													aliquip ex ea commodo
+													consequat.
+												</p>
+											</div>
+										</div>
+
+										<div class="tech-list">
+											<div class="w1">
+												<img width="70%" src="assets/images/icon/python.svg" alt="">
+											</div>
+
+											<div class="w11 tech-list-text">
+												<p class="tech-list-title">
+													Python For Automation
+												</p>
+												<p class="tech-list-content">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+													tempor
+													incididunt ut labore et
+													dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													laboris nisi ut
+													aliquip ex ea commodo
+													consequat.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="tech-list-group">
+										<div class="tech-list">
+											<div class="w1">
+												<img width="70%" src="assets/images/icon/html5.svg" alt="">
+											</div>
+
+											<div class="w11 tech-list-text">
+												<p class="tech-list-title">
+													HTML5 Development Tools
+												</p>
+												<p class="tech-list-content">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+													tempor
+													incididunt ut labore et
+													dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													laboris nisi ut
+													aliquip ex ea commodo
+													consequat.
+												</p>
+											</div>
+										</div>
+
+										<div class="tech-list">
+											<div class="w1">
+												<img width="70%" src="assets/images/icon/python.svg" alt="">
+											</div>
+
+											<div class="w11 tech-list-text">
+												<p class="tech-list-title">
+													Python For Automation
+												</p>
+												<p class="tech-list-content">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+													tempor
+													incididunt ut labore et
+													dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													laboris nisi ut
+													aliquip ex ea commodo
+													consequat.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="carousel-item">
+									<div class="tech-list-group">
+										<div class="tech-list">
+											<div class="w1">
+												<img width="70%" src="assets/images/icon/html5.svg" alt="">
+											</div>
+
+											<div class="w11 tech-list-text">
+												<p class="tech-list-title">
+													HTML5 Development Tools
+												</p>
+												<p class="tech-list-content">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+													tempor
+													incididunt ut labore et
+													dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													laboris nisi ut
+													aliquip ex ea commodo
+													consequat.
+												</p>
+											</div>
+										</div>
+
+										<div class="tech-list">
+											<div class="w1">
+												<img width="70%" src="assets/images/icon/python.svg" alt="">
+											</div>
+
+											<div class="w11 tech-list-text">
+												<p class="tech-list-title">
+													Python For Automation
+												</p>
+												<p class="tech-list-content">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+													tempor
+													incididunt ut labore et
+													dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+													laboris nisi ut
+													aliquip ex ea commodo
+													consequat.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+	</section>
+	<section class=" pt-5 pb-5 m-force">
+		<div class="container">
+			<div class="text-center sec-heading pt-3 pb-4">
+				<h1>Featured Communities</h1>
+				<p>We are home to some amazing communities</p>
+			</div>
+			<div class="carousel-wrap">
+				<div class="owl-carousel">
+					<div class="item">
+						<a href="#">
+							<div class="slider-card">
+								<div class="">
+									<img src="./assets/images/icon/github.svg" alt="" class="card-logo">
+									<p class="card-title mt-4">GitHub Campus Experts</p>
+									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna
+										aliqua.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="slider-card">
+								<div class="">
+									<img src="./assets/images/icon/dsclogo.png" alt="" class="card-logo">
+									<p class="card-title mt-4">Google Developer Student Club</p>
+									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna
+										aliqua.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="slider-card">
+								<div class="">
+									<img src="./assets/images/icon/microsoft.svg" alt="" class="card-logo">
+									<p class="card-title mt-4">Microsoft Student Partners</p>
+									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna
+										aliqua.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="slider-card">
+								<div class="">
+									<img src="./assets/images/icon/https___cdn.evbuc.com_images_53574733_126074832101_2_original.png" alt="" class="card-logo">
+									<p class="card-title mt-4">Ingressive Campus Ambassadors</p>
+									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna
+										aliqua.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<section class="categories pt-5 pb-5">
+		<div class="container">
+			<div class="text-center sec-heading pt-3 pb-4">
+				<h1>Testimonials</h1>
+				<p>What people say about the community</p>
+			</div>
+			<div class="carousel-wrap">
+				<div class="owl-carousel">
+					<div class="item">
+						<a href="#">
+							<div class="slider-card testimonials">
+								<div class="text-center">
+									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="" class="card-logo">
+									<p class="card-title mt-4">John Doe</p>
+									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna
+										aliqua.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="slider-card testimonials">
+								<div class="text-center">
+									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="" class="card-logo">
+									<p class="card-title mt-4">John Doe</p>
+									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna
+										aliqua.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="slider-card testimonials">
+								<div class="text-center">
+									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="" class="card-logo">
+									<p class="card-title mt-4">John Doe</p>
+									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna
+										aliqua.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="item">
+						<a href="#">
+							<div class="slider-card testimonials">
+								<div class="text-center">
+									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="" class="card-logo">
+									<p class="card-title mt-4">John Doe</p>
+									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna
+										aliqua.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<section class="cta">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6 text-center">
+					<h4 class="text-white heading">Join A Community Of Awesome Student Developers</h4>
+				</div>
+				<div class="col-lg-6 text-center">
+					<div class="">
+						<a href="#" class="btn cc-btn btn--outline is-white">Join</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="back-top">
+		<a href="#top" class="btn-top" id="topper">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+	</div>
+	<footer class="pt-4">
+		<div class="container">
+			<div class="rounded-social-buttons">
+
+				<a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+
+				<a class="social-button email" href="mailto:hello@codeclubph.tech" target="_blank"><i class="fas fa-envelope"></i></a>
+				<a class="social-button github" href="https://www.github.com/" target="_blank"><i class="fab fa-github-alt"></i></a>
+			</div>
+			<div class="credits text-center mt-3">
+				<p class="text-white small">Made with <i class="fas fa-heart text-danger"></i> &amp; <i class="fas fa-music text-secondary"></i></p>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="lib/owl/dist/owl.carousel.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/popper.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="src/index.js"></script>
+</body>
+
+</html>
