@@ -43,24 +43,31 @@ $(document).ready(function () {
 let cardSlot = document.getElementById('card-slot');
 let slotDetails = [
   {
-    src: 'assets/images/Meet-People/1.png',
-    name: 'Anderson John',
-    role: 'Code Club Lead',
+    src: 'assets/images/Meet-People/ray.jpg',
+    name: 'Ray Okah',
+    role: 'Pioneer',
   },
   {
-    src: 'assets/images/Meet-People/2.png',
-    name: 'Jessica Mike',
-    role: 'Code Club Lead',
+    src: 'assets/images/Meet-People/tammy.jpg',
+    name: 'Tammy',
+    role: 'Community Lead',
   },
   {
-    src: 'assets/images/Meet-People/3.png',
-    name: 'Sarah John',
-    role: 'Code Club Lead',
+    src: 'assets/images/Meet-People/debbie.jpg',
+    name: 'Deborah Emeni',
+    role: 'DSC Lead',
   },
+
   {
-    src: 'assets/images/Meet-People/4.png',
-    name: 'Lisa Mendez',
-    role: 'Code Club Lead',
+    src: 'assets/images/Meet-People/obinna.jpg',
+    name: 'Obinna Odirionye',
+    role: 'Mentor',
+  },
+
+  {
+    src: 'assets/images/Meet-People/kelvin.jpg',
+    name: 'Kelvin Gobo',
+    role: 'Mentor',
   },
 ];
 
@@ -73,8 +80,36 @@ window.addEventListener('scroll', () => {
     topBtn.style.display = 'none';
   }
 });
-topBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+topBtn.addEventListener(
+  'click',
+  (e) => {
+    e.preventDefault();
 
-  $('html, body').animate({ scrollTop: 0 }, 'slow');
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
+  },
+  { passive: true }
+);
+
+$('.nav-item').hover(function () {
+  $(this.childNodes[3]).removeClass('navOut');
+  $(this.childNodes[3]).addClass('navIn');
 });
+
+$('.nav-item').mouseleave(function () {
+  $(this.childNodes[3]).removeClass('navIn');
+  $(this.childNodes[3]).addClass('navOut');
+});
+
+let navBar = document.getElementById('navBar');
+window.addEventListener(
+  'scroll',
+  () => {
+    let Offset = pageYOffset;
+    if (Offset > 120) {
+      navBar.style.backgroundColor = 'rgba(255, 255, 255, 0.85)';
+    } else {
+      navBar.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+    }
+  },
+  { passive: true }
+);
