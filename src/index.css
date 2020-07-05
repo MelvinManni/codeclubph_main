@@ -189,7 +189,7 @@ section {
 .navbar {
   background-color: rgb(255, 255, 255);
   transition: 0.3s ease;
-  padding: 1em 2.6em;
+  padding: 0.3em 2.6em;
 }
 
 .navbar .navbar-nav {
