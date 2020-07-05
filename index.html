@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Codeclub PH - Home </title>
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="lib/themify-icons/themify-icons.css">
+	<link rel='preload' type="text/css" href="lib/themify-icons/themify-icons.css">
 	<link rel="stylesheet" type="text/css" href="lib/owl/dist/assets/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="lib/owl/dist/assets/owl.theme.default.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,900|Source+Sans+Pro:300,400&display=swap" rel="stylesheet">
@@ -14,8 +14,32 @@
 </head>
 
 <body>
+		<header class="container  navbar-light" id="top">
+		
+			<nav class="navbar navbar-expand-lg fixed-top  navbar-light align-items-center" id="navBar">
+				<a class="navbar-brand" href="index.html">
+					<div class="logo">
+						<img width="100%" src="./assets/icons/logo.jpg" alt="">
+					</div>
+				</a>
+		
+		
+				<div class="ml-auto">
+					<ul class="navbar-nav row ml-auto">
+						<li class="nav-item">
+							<a class="nav-link " href="index.html">Home</a>
+							<div></div>
+						</li>
+						<li class="nav-item ml-5">
+							<a class="nav-link" href="./about.html">About Us</a>
+							<div></div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
 	<section class="container-fluid p-0">
-		<div class="row no-gutters">
+		<div class="row home-main no-gutters">
 			<div class="col-lg-6 p-0">
 				<div class="intro justify-content-center">
 					<div class="intro__wrapper col-lg-7 ">
@@ -51,7 +75,7 @@
 			</p>
 
 			<div class="mt-3">
-				<a href="about-codeclub" class="btn cc-btn btn--outline is-white">Learn More</a>
+				<a href="about.html" class="btn cc-btn btn--outline is-white">Learn More</a>
 			</div>
 		</div>
 	</section>
@@ -63,24 +87,16 @@
 					</div>
 
 				</div>
-				<div class="col-lg-6 vh-100 pt-2">
+				<div class="col-lg-6 pt-2">
 					<div class="col-lg-10 mx-auto mt-3">
 						<p class="title">
 							Technologies That Excite Us
 						</p>
 
 						<p class="content">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-							commodo consequat.
-						</p>
-
-						<p class="content">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-							labore et dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-							commodo consequat.
+							Being a Tech-based ecosystem, we tend to dabble in a few technologies and endeavor to guide and mentor young and
+							expiring tech-enthusiast starting their journey with us. These technologies cover but not limited to these areas: Web
+							development, Cloud engineering, Design.
 						</p>
 
 						<div id="carouselExampleIndicators3" class=" carousel slide mr-auto ml-auto" data-ride="carousel">
@@ -88,50 +104,33 @@
 								<li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
 								<li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
 								<li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+								<li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
+								<li data-target="#carouselExampleIndicators3" data-slide-to="4"></li>
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
 									<div class="tech-list-group">
 										<div class="tech-list">
-											<div class="w1">
-												<img width="70%" src="assets/images/icon/html5.svg" alt="">
-											</div>
-
 											<div class="w11 tech-list-text">
-												<p class="tech-list-title">
-													HTML5 Development Tools
-												</p>
+												<div class="mb-2 d-flex align-items-center">
+													<div class="col-3">
+														<img width="70%" src="assets/images/icon/html5.svg" alt="">
+													</div>
+													<p class="tech-list-title">
+														Web Development: Making Life Easier for Yourself
+													</p>
+												</div>
+												
 												<p class="tech-list-content">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-													tempor
-													incididunt ut labore et
-													dolore magna
-													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-													laboris nisi ut
-													aliquip ex ea commodo
-													consequat.
-												</p>
-											</div>
-										</div>
-
-										<div class="tech-list">
-											<div class="w1">
-												<img width="70%" src="assets/images/icon/python.svg" alt="">
-											</div>
-
-											<div class="w11 tech-list-text">
-												<p class="tech-list-title">
-													Python For Automation
-												</p>
-												<p class="tech-list-content">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-													tempor
-													incididunt ut labore et
-													dolore magna
-													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-													laboris nisi ut
-													aliquip ex ea commodo
-													consequat.
+													Everyone wants to learn web development but only a small percentage eventually puts in the work. For front-end, we start
+													with HTML which deals with the content and CSS that adds all the colour, but once we hit Javascript, the lights go out.
+													Javascript is difficult to learn probably because it covers the front-end and back-end, but it is not impossible.
+													Thankfully, frameworks such as Bootstrap (for CSS and Javascript), React, Angular and jQuery (for Javascript) have
+													evolved over time and made life easier for us. Now a ten line code can be covered in two.
+													Back-end development takes care of database and servers behind the scenes and converts http to real responses. A
+													herculean task right? Luckily, frameworks like Django, Node/Express and Ruby on Rails have saved many from the likes of
+													Javascript, PHP and Python.
+													Now we have no excuse!
 												</p>
 											</div>
 										</div>
@@ -141,45 +140,28 @@
 								<div class="carousel-item">
 									<div class="tech-list-group">
 										<div class="tech-list">
-											<div class="w1">
-												<img width="70%" src="assets/images/icon/html5.svg" alt="">
-											</div>
-
 											<div class="w11 tech-list-text">
-												<p class="tech-list-title">
-													HTML5 Development Tools
-												</p>
+												<div class="mb-2 d-flex align-items-center">
+													<div class="col-3">
+														<img width="70%" src="assets/icons/docker.png" alt="">
+													</div>
+													<p class="tech-list-title">
+														DevOps Engineer: A Great Alternative
+													</p>
+												</div>
+								
 												<p class="tech-list-content">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-													tempor
-													incididunt ut labore et
-													dolore magna
-													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-													laboris nisi ut
-													aliquip ex ea commodo
-													consequat.
-												</p>
-											</div>
-										</div>
+													DevOps in recent times has begun to make more waves and a lot of developers are towing towards this path. Luckily there
+													is a roadmap to achieving this.
+													First, learning key OS concepts such as Process Management, Sockets, I/O, Memory storage and File systems cannot be
+													overemphasized. Also, you must educate yourself on management of servers using Linux or Ubuntu. A good grasp of the
+													command line is vital too.
+													The world has become a tech village which makes networking and security indispensible making concepts like OSI Model,
+													DNS, HTTP, HTTPS important. You should also know how to setup web servers like Apache, IIS and Tomcat.
+													Infrastructure is the most important aspect of DevOps and you should get comfortable with containers such as Docker and
+													Kubernetes. Other concepts which come in handy include continous intergration and continuous delivery (CI/CD) tools,
+													software monitoring and cloud provides such as AWS, Google Cloud, and Azure.
 
-										<div class="tech-list">
-											<div class="w1">
-												<img width="70%" src="assets/images/icon/python.svg" alt="">
-											</div>
-
-											<div class="w11 tech-list-text">
-												<p class="tech-list-title">
-													Python For Automation
-												</p>
-												<p class="tech-list-content">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-													tempor
-													incididunt ut labore et
-													dolore magna
-													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-													laboris nisi ut
-													aliquip ex ea commodo
-													consequat.
 												</p>
 											</div>
 										</div>
@@ -189,55 +171,103 @@
 								<div class="carousel-item">
 									<div class="tech-list-group">
 										<div class="tech-list">
-											<div class="w1">
-												<img width="70%" src="assets/images/icon/html5.svg" alt="">
-											</div>
-
 											<div class="w11 tech-list-text">
-												<p class="tech-list-title">
-													HTML5 Development Tools
-												</p>
+												<div class="mb-2 d-flex align-items-center">
+													<div class="col-3">
+														<img width="70%" src="assets/icons/pm.png" alt="">
+													</div>
+													<p class="tech-list-title">
+														Product Design: What is that about?
+													</p>
+												</div>
+								
 												<p class="tech-list-content">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-													tempor
-													incididunt ut labore et
-													dolore magna
-													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-													laboris nisi ut
-													aliquip ex ea commodo
-													consequat.
-												</p>
-											</div>
-										</div>
-
-										<div class="tech-list">
-											<div class="w1">
-												<img width="70%" src="assets/images/icon/python.svg" alt="">
-											</div>
-
-											<div class="w11 tech-list-text">
-												<p class="tech-list-title">
-													Python For Automation
-												</p>
-												<p class="tech-list-content">
-													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-													tempor
-													incididunt ut labore et
-													dolore magna
-													aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-													laboris nisi ut
-													aliquip ex ea commodo
-													consequat.
+													Most people assume that product design is about aesthetics and graphics, but it is more complex than that. Areas of
+													design include product design, UI, UX, graphic design, interaction design, etc. Product design is a collage of many
+													roles including UX design, data analysis, prototyping, graphic and technical design, marketing etc. A product designer
+													identifies and defines a problem. Then he creates prototypes which are tested for feedback before they are fine-tuned
+													based on the feedbacks received. UX design sometimes overlaps with product design, but the latter focuses on the
+													product.
+													Product designers are expected to have strong UI/UX and visual design skills, wireframing and prototyping experience,
+													research experience and excellent visual and communication skills with working knowledge on Sketch and Adobe CC.
+													Like other product designers, you can be a problem solver too. You only need to put in the work.
 												</p>
 											</div>
 										</div>
 									</div>
 								</div>
+
+								<div class="carousel-item">
+									<div class="tech-list-group">
+										<div class="tech-list">
+											<div class="w11 tech-list-text">
+												<div class="mb-2 d-flex align-items-center">
+													<div class="col-3">
+														<img width="70%" src="assets/icons/uiux.png" alt="">
+													</div>
+													<p class="tech-list-title">
+														Yes, you can be a UI/UX designer
+													</p>
+												</div>
+												
+												<p class="tech-list-content">
+													UI/UX is a blend of interface and experience to maximize a user’s interaction with a product. A lot of people assume
+													that this aspect of design is innate and requires only intuition, but it can be acquired via practice and research.
+													There are some steps which would accelerate your journey towards this goal.
+													First, you must the basic principles which include colour, contrast, typography, consistency and balance. With the
+													basics, you begin to acquire an ‘eye’ for design. This can be achieved if you study sample designs on Dribble, UI
+													movement, One Page Love, etc. Daily consumption of design articles will also help to build your taste in design.
+													Practice is the most fundamental step. Design fake projects or replicate old ones. Get comfortable with tools like
+													Sketch, Figma, Balsamiq, Adobe XD, Marvel App, etc. Also get yourself a good mentor. You will be glad that you did.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>			
+
+								<div class="carousel-item">
+									<div class="tech-list-group">
+										<div class="tech-list">
+											<div class="w11 tech-list-text">
+												<div class="mb-2 d-flex align-items-center">
+													<div class="col-3">
+														<img width="70%" src="assets/icons/ai.png" alt="">
+													</div>
+													<p class="tech-list-title">
+														AI to the World!
+													</p>
+												</div>
+								
+												<p class="tech-list-content">
+													Artificial intelligence has been a field of interest since people questioned the ability of machines
+													to think. In
+													recentsl years, the progress made on this field has force a lot of professionals (and even amateurs)
+													to explore this
+													branch of tech.
+													AI is in simple terms the ability of a machine to take human-like decisions without human
+													intervention. Machine
+													Learning, ML is a subset that uses statistical algorithms to create machines that improve based on
+													experiences without
+													explicit programming.
+													This field is moving so rapidly that you need to update yourself very often. It is a web of Python
+													and Data Science
+													built on statistics and calculus with a tinge of psychology.
+													Fortunately, it is too new for you to be left behind. Arm yourself with Python, R and Data Science
+													course. Then proceed
+													to get your nanodegree from Udacity or other platforms. If you have done this, you are not far from
+													the promise land.
+								
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
 							</div>
 						</div>
 					</div>
 				</div>
-
 			</div>
 	</section>
 	<section class=" pt-5 pb-5 m-force">
@@ -319,7 +349,7 @@
 						<a href="#">
 							<div class="slider-card testimonials">
 								<div class="text-center">
-									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="" class="card-logo">
+									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.jpeg" alt="" class="card-logo">
 									<p class="card-title mt-4">John Doe</p>
 									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna
@@ -332,7 +362,7 @@
 						<a href="#">
 							<div class="slider-card testimonials">
 								<div class="text-center">
-									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="" class="card-logo">
+									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.jpeg" alt="" class="card-logo">
 									<p class="card-title mt-4">John Doe</p>
 									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna
@@ -345,7 +375,7 @@
 						<a href="#">
 							<div class="slider-card testimonials">
 								<div class="text-center">
-									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="" class="card-logo">
+									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.jpeg" alt="" class="card-logo">
 									<p class="card-title mt-4">John Doe</p>
 									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna
@@ -358,7 +388,7 @@
 						<a href="#">
 							<div class="slider-card testimonials">
 								<div class="text-center">
-									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.png" alt="" class="card-logo">
+									<img src="./assets/images/ricky-turner-C7OVquw8oRo-unsplash.jpeg" alt="" class="card-logo">
 									<p class="card-title mt-4">John Doe</p>
 									<p class="card-content">Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod
 										tempor incididunt ut labore et dolore magna
@@ -378,7 +408,7 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-6 text-center">
-					<h4 class="text-white heading">Join A Community Of Awesome Student Developers</h4>
+					<p class="text-white heading">Join A Community Of Awesome Student Developers</p>
 				</div>
 				<div class="col-lg-6 text-center">
 					<div class="">
