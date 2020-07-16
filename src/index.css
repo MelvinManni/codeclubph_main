@@ -839,6 +839,10 @@ input {
   font-weight: 400;
 }
 
+#status{
+  transition: 0.45s ease all;
+}
+
 input:focus {
   outline: none;
 }
